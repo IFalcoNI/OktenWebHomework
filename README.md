@@ -1,2 +1,2 @@
 # OktenWebHomework
-All homework from OktenWeb will be storer here :)
+All homework from OktenWeb will be stored here :)
