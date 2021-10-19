@@ -130,7 +130,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.Post{
+.Post {
   width: 100%;
   background-color: rgba(0, 0, 255, 0.61);
 }
@@ -169,13 +169,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  flex-grow: 1;
   background-color: rgb(73, 73, 255);
   height: calc(100% - 10px);
   border-radius: 5px;
 }
 .ThreeWidgets {
   display: flex;
+  column-gap: 5px;
   width: calc(100% - 10px);
   justify-content: space-between;
 }
