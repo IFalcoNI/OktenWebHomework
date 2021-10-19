@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(29, 29, 29);
+}
+.Container {
+  width: 50%;
+  background-color: azure;
+  border-radius: 5px;
+}
+.A {
+  width: calc(100% - 10px);
+}
+.BC {
+  display: flex;
+}
+.B,
+.C {
+  width: 50%;
+}
+.A,
+.B,
+.C {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  margin: 5px;
+  height: 200px;
+  border-radius: 5px;
+}
+/*  */
+.ContainerSite {
+  color: white;
+  background-color: azure;
+  border-radius: 5px;
+}
+.Header,
+.Nav,
+.Center,
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  width: calc(100% - 10px);
+}
+.Header {
+  background-color: blue;
+  height: 70px;
+}
+.Nav {
+  height: 70px;
+  background-color: darkblue;
+}
+.Center {
+  height: 200px;
+  display: flex;
+}
+.Main {
+  width: 75%;
+  background-color: lightblue;
+  height: 100%;
+}
+.Aside {
+  width: 25%;
+  height: 100%;
+  background-color: blue;
+}
+.Main,
+.Aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Footer {
+  height: 70px;
+  background-color: cornflowerblue;
+}
+/*  */
+.ContainerPost {
+  background-color: azure;
+  border-radius: 5px;
+  font-weight: bold;
+}
+#Header,
+.CenterPost,
+#Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  width: calc(100% - 10px);
+}
+#Header {
+  background-color: rgb(255, 255, 111);
+  height: 70px;
+}
+.CenterPost {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.Post {
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Menu {
+  width: 20%;
+  background-color: pink;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AsidePost {
+  width: calc(80% - 10px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.Post{
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0.61);
+}
+#Footer {
+  height: 70px;
+  background-color: rgba(255, 255, 0, 0.644);
+}
+#Header,
+#Menu,
+.Post,
+#Footer {
+  border: 1px solid black;
+}
+/*  */
+.ContainerWidgets {
+  color: white;
+  background-color: azure;
+  border-radius: 5px;
+}
+.Widgets,
+.ThreeWidgets,
+.Contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  height: 200px;
+  border-radius: 5px;
+}
+.Widgets {
+  background-color: blue;
+}
+.BigWidget,
+.BiggerWidget,
+.HugeWidget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background-color: rgb(73, 73, 255);
+  height: calc(100% - 10px);
+  border-radius: 5px;
+}
+.ThreeWidgets {
+  display: flex;
+  width: calc(100% - 10px);
+  justify-content: space-between;
+}
+.Contact {
+  background-color: blue;
+}
