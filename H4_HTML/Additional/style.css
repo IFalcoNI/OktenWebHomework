@@ -86,6 +86,8 @@ body {
 .FourItem {
   flex-grow: 1;
   height: 90%;
+  max-width: 600px;
+  min-width: 250px;
   min-height: 200px;
   margin: 10px;
   background-color: var(--main-item-color);
