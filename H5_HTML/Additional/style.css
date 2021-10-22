@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: rgb(29, 29, 29);
+  color: white;
+}
+.top {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+}
+.top_nav {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.wrapper {
+  max-width: 1400px;
+  width: 100%;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+.top_nav_item {
+  width: 50px;
+  height: 10px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  padding: 20px 10px;
+}
+.header_nav {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.header_nav_item {
+  width: 70px;
+  height: 10px;
+}
+.header_logo {
+  width: 150px;
+  height: 60px;
+}
+.main {
+  width: 100%;
+  padding: 100px 10px;
+}
+.main_text {
+  width: 70px;
+  height: 10px;
+}
+.upper_text {
+  margin: 10px;
+  column-gap: 25px;
+}
+.medium_text {
+  margin: 10px;
+  column-gap: 15px;
+}
+.lower_text {
+  margin: 10px 0 20px 0;
+  column-gap: 10px;
+}
+.btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+}
+.gallery {
+  width: 100%;
+  padding: 50px 10px;
+}
+.gallery_header {
+  column-gap: 10px;
+}
+.gallery_header_text {
+  width: 100px;
+  height: 10px;
+}
+.center_gallery {
+  width: 90%;
+  justify-content: space-between;
+  padding: 20px;
+}
+.photo_item {
+  width: 250px;
+  height: 200px;
+}
+.photo_alt {
+  width: 100px;
+  height: 20px;
+  margin: 10px;
+}
+.community {
+  width: 100%;
+  padding: 100px 10px;
+  justify-content: space-around;
+}
+.community_photo {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+}
+.community_alt {
+  width: 50px;
+  height: 20px;
+  margin: 20px 10px;
+}
+.blog {
+  width: 100%;
+  padding: 0px 10px;
+  justify-content: space-around;
+}
+.blog_header {
+  column-gap: 10px;
+  padding: 0 0 50px 0;
+}
+.blog_header_text {
+  width: 120px;
+  height: 20px;
+}
+.post {
+  max-width: 200px;
+  padding: 10px;
+}
+.post_image {
+  width: 200px;
+  height: 100px;
+}
+.blog_description {
+  justify-content: space-between;
+}
+.blog_header {
+  margin: 10px;
+}
+.blog_posts {
+  flex-wrap: wrap;
+}
+.blog_post {
+  flex-basis: 30%;
+  margin: 50px 0;
+}
+.blog_text {
+  width: 90px;
+  height: 10px;
+  margin: 15px 0;
+}
+.blog_description_text {
+  width: 30px;
+  height: 10px;
+  margin: 10px 0;
+}
+.blog_footer {
+  border-top: 3px solid rgb(0, 195, 255);
+  border-radius: 2px;
+  justify-content: space-between;
+}
+.form {
+  width: 500px;
+  height: 400px;
+  margin: 20px 0;
+}
+.form_container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.form_header {
+  column-gap: 25px;
+}
+.form_header_text {
+  width: 90px;
+  height: 20px;
+}
+.form_main_text {
+  margin: 20px 0;
+  column-gap: 20px;
+  display: flex;
+}
+.form_text {
+  width: 40px;
+  height: 10px;
+}
+.footer {
+  width: 100%;
+  height: 150px;
+  padding: 0 10px;
+}
+.footer_items {
+  column-gap: 10px;
+}
+.footer_item {
+  width: 30px;
+  height: 30px;
+}
+.footer_license {
+  margin: 25px 0;
+  width: 500px;
+  height: 10px;
+}
+.flex-centralize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-centralize-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex-centralize-column-horizontaly {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-centralize-horizontaly {
+  display: flex;
+  justify-content: center;
+}
+.flex-centralize-verticaly {
+  display: flex;
+  align-items: center;
+}
+.flex {
+  width: 70%;
+}
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+.bg-aqua {
+  background-color: rgb(0, 195, 255);
+}
+.bg-dblue {
+  background-color: rgb(0, 42, 119);
+}
+.bg-grey {
+  background-color: rgb(180, 180, 180);
+}
+.smooth-aqua-border {
+  border: 3px solid rgb(0, 195, 255);
+  border-radius: 20px;
+}
+.aqua-border {
+  border: 3px solid rgb(0, 195, 255);
+  border-radius: 2px;
+}
+.smooth-border {
+  border-radius: 5px;
+}
+.round-border {
+  border-radius: 50%;
+}
