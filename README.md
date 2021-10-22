@@ -1,4 +1,4 @@
-# OktenWebHomework
+# OktenWebHomeworkBoard
 |   № / Name | Check mark  |
 | :----------: | :----------:  |
 |   [H1_HTML](https://github.com/IFalcoNI/OktenWebHomework/tree/main/H1_HTML)  |     ✅      |
