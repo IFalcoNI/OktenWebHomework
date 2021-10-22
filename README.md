@@ -1,5 +1,5 @@
 # OktenWebHomework
-|   № / Name | Check mark  | |   № / Name | Check mark  |
+|   № / Name | Check mark  |
 | :----------: | :----------:  |
 |   [H1_HTML](https://github.com/IFalcoNI/OktenWebHomework/tree/main/H1_HTML)  |     ✅      |
 |   [H2_HTML](https://github.com/IFalcoNI/OktenWebHomework/tree/main/H2_HTML)  |     ✅      |
