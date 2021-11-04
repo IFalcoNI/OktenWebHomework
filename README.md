@@ -9,4 +9,4 @@
 |   [H5_HTML](https://github.com/IFalcoNI/OktenWebHomework/tree/main/HTML/H5_HTML)  |      ✅     |
 |   [H5_HTML(Additional)](https://github.com/IFalcoNI/OktenWebHomework/tree/main/HTML/H5_HTML/Additional)  |     ✅       |
 |   [H6_HTML](https://github.com/IFalcoNI/OktenWebHomework/tree/main/HTML/H6_HTML)  |    ✅       |
-|   [H7_HTML](https://github.com/IFalcoNI/OktenWebHomework/tree/main/HTML/H7_HTML)  |           |
+|   [H7_HTML](https://github.com/IFalcoNI/OktenWebHomework/tree/main/HTML/H7_HTML)  |     ✅      |
