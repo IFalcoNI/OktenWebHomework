@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(29, 29, 29);
+  color: white;
+}
+ul,
+p {
+  margin-bottom: 0;
+}
+.text_primary {
+  color: #d67e34;
+}
+.font-tinos {
+  font-family: "Tinos", serif;
+}
+.font-sans {
+  font-family: "Open Sans", sans-serif;
+}
+.wrap {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+}
+.header_container,
+.history_container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 20px;
+}
+.main {
+  width: 100%;
+  height: 100%;
+}
+.hero {
+  width: 100%;
+  height: 800px;
+  background-image: url("../assets/hero.png");
+  background-position: center;
+}
+.header {
+  width: 100%;
+  top: 64px;
+  align-items: center;
+}
+.header_logo {
+  width: 100px;
+  height: 65px;
+  background: url("../assets/LOGO.png");
+}
+.header_nav {
+  column-gap: 20px;
+}
+.burger {
+  width: 50px;
+  height: 50px;
+}
+.line,
+.line::before,
+.line::after {
+  position: absolute;
+  top: calc(50% - 3px);
+  width: 50px;
+  height: 6px;
+  background-color: #ff7400;
+  border-radius: 3px;
+}
+.line:before {
+  content: "";
+  top: -16px;
+}
+.line:after {
+  content: "";
+  top: 16px;
+}
+.nav_list {
+  column-gap: 20px;
+  list-style: none;
+}
+.nav_list {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 900;
+  /* line-height: 10px; */
+}
+.nav_cart {
+  border-right: 2px solid white;
+  height: 51px;
+}
+.nav_cart img {
+  width: 18px;
+  height: 18px;
+  margin-right: 20px;
+}
+.nav_call_us {
+  width: 200px;
+}
+.phone {
+  font-size: 18px;
+  font-weight: bold;
+}
+.phone img {
+  width: 23px;
+  height: 23px;
+  margin-right: 10px;
+}
+.call_us_text {
+  font-size: 14px;
+}
+.nav_booking {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #ff7400;
+  border: none;
+  /* width: 157px;
+  height: 47px; */
+  padding: 18px 25px;
+  text-transform: uppercase;
+}
+.center_text {
+  color: #d67e35;
+  row-gap: 20px;
+}
+.welcome {
+  font-size: 50px;
+}
+.restourant {
+  font-size: 80px;
+}
+.home_of_food {
+  color: whitesmoke;
+  font-size: 18px;
+}
+.center_text button {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #ff7400;
+  border: none;
+  padding: 18px 25px;
+  text-transform: uppercase;
+}
+.history {
+  width: 100%;
+  background-color: #fff;
+}
+/* dsgfsdgsd */
+.box_menu {
+  top: -100px;
+  width: 100%;
+  row-gap: 20px;
+}
+.eat_box {
+  margin: 0 10px;
+  text-align: center;
+  row-gap: 10px;
+  width: 349px;
+  height: 348px;
+  background: #fff;
+  -webkit-box-shadow: -5px 50px 50px 3px rgba(109, 109, 109, 0.54);
+  box-shadow: -5px 50px 50px 3px rgba(109, 109, 109, 0.54);
+}
+.eat_box img {
+  width: 87px;
+  margin-top: 10px;
+}
+.eat_box p {
+  margin: 10px;
+}
+.eat_q {
+  height: 100px;
+  margin: 10px;
+}
+.eat_q_description {
+  color: black;
+  font-size: 26px;
+}
+.eat_q_description span {
+  color: #bc9060;
+}
+.eat_description {
+  color: #656363;
+  font-size: 26px;
+}
+.history_text {
+  padding: 400px 0 150px 0;
+}
+.history_text img {
+  height: 50%;
+  margin: 10px;
+}
+.history_text_left {
+  flex-basis: 50%;
+  margin: 10px;
+}
+.history_text_left p {
+  font-size: 16px;
+  color: #656363;
+  max-width: 444px;
+  height: 217px;
+  text-align: center;
+  margin-top: 25px;
+}
+.history_header_text {
+  font-size: 54px;
+  color: black;
+}
+.history_header_text span {
+  color: #d67e34;
+}
+.eat_type_q {
+  column-gap: 50px;
+  margin-top: 40px;
+}
+.number {
+  color: #bc9060;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 1150px) {
+  .eat_box {
+    width: 320px;
+    height: 330px;
+  }
+  .eat_q_description {
+    font-size: 22px;
+  }
+  .eat_description {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1070px) {
+  .eat_box {
+    width: 290px;
+    height: 290px;
+  }
+  .eat_q_description {
+    font-size: 18px;
+  }
+  .eat_description {
+    font-size: 18px;
+  }
+  .history_text {
+    padding: 250px 0 150px 0;
+  }
+}
+@media screen and (max-width: 990px) {
+  .eat_box {
+    width: 270px;
+    height: 270px;
+  }
+  .eat_q_description {
+    font-size: 16px;
+  }
+  .eat_description {
+    font-size: 16px;
+  }
+  .history_text img {
+    width: 50%;
+  }
+  .history_text_left p {
+    font-size: 14px;
+  }
+  .history_header_text {
+    font-size: 44px;
+  }
+  .history_text {
+    padding: 250px 0 150px 0;
+  }
+}
+@media screen and (max-width: 920px) {
+  /* .history_text {
+    padding: 500px 0 150px 0;
+  } */
+  .eat_box {
+    width: 250px;
+    height: 250px;
+  }
+  .eat_q_description {
+    font-size: 16px;
+  }
+  .eat_description {
+    font-size: 14px;
+  }
+  .welcome {
+    font-size: 40px;
+  }
+  .restourant {
+    font-size: 60px;
+  }
+  .home_of_food {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 849px) {
+  .history_text {
+    padding: 500px 0 150px 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  .history_text_left p {
+    font-size: 20px;
+  }
+  .history_header_text {
+    font-size: 54px;
+  }
+  .history_text {
+    flex-direction: column;
+    align-items: center;
+  }
+  .history_text_left {
+    flex-basis: 90%;
+  }
+  .history_text img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .welcome {
+    font-size: 30px;
+  }
+  .restourant {
+    font-size: 50px;
+  }
+  .home_of_food {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 579px) {
+  .history_text {
+    padding: 770px 0 150px 0;
+  }
+}
+@media screen and (max-width: 539px) {
+  .eat_box {
+    width: 330px;
+    height: 340px;
+  }
+  .eat_q_description {
+    font-size: 22px;
+  }
+  .eat_description {
+    font-size: 22px;
+  }
+  .history_text {
+    padding: 1050px 0 150px 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header {
+    top: 20px;
+  }
+  .history_header_text {
+    font-size: 34px;
+  }
+  .eat_type_q {
+    /* flex-basis: 100%; */
+    flex-direction: column;
+  }
+  .history_text_left p {
+    font-size: 16px;
+  }
+  .main {
+    justify-content: center;
+  }
+  .center_text {
+    margin-top: -55px;
+  }
+  .welcome {
+    font-size: 25px;
+  }
+  .restourant {
+    font-size: 40px;
+  }
+  .home_of_food {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .eat_type_q {
+    margin-top: 50px;
+  }
+}
