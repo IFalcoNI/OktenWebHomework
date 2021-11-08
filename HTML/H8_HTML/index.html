@@ -38,7 +38,7 @@
           top_wrap
         "
       >
-        <div class="top_left_info h-100 d-flex align-items-center">
+        <div class="top_left_info h-100">
           <img src="./assets/FindMark.png" alt="" />
           <p>Ваш город: <a href="#">Москва</a></p>
           <div class="btn-group">
@@ -78,7 +78,7 @@
             </ul>
           </div>
         </div>
-        <div class="top_right_info d-flex align-items-center">
+        <div class="top_right_info">
           <a href="">Доставка</a>
           <a href="">Оплата</a>
           <a href="">Новости</a>
@@ -96,35 +96,37 @@
             <img src="./assets/Logo.png" alt="" />
             <div class="header_text">
               <div class="fs24">AVT-ZAP</div>
-              <div class="fs12 text-wrap">
-                Интернет-магазин запчастей для АКПП
+              <div class="fs12">Интернет-магазин запчастей для АКПП</div>
+            </div>
+          </div>
+          <div class="working_info">
+            <div class="working_days d-flex align-items-center">
+              <img src="./assets/clock.png" alt="" />
+              <div class="working_text d-flex flex-column align-items-end">
+                <p>Мы работаем: будни - 9:00-21:00</p>
+                <p>сб. - 10:00-15:00</p>
               </div>
             </div>
-          </div>
-          <div class="working_days d-flex align-items-center">
-            <img src="./assets/clock.png" alt="" />
-            <div class="working_text d-flex flex-column align-items-end">
-              <p>Мы работаем: будни - 9:00-21:00</p>
-              <p>сб. - 10:00-15:00</p>
+            <div class="work_address d-flex align-items-center">
+              <img src="./assets/FindMark_2.png" alt="" />
+              <p>Невский пр-т, д. 45</p>
             </div>
           </div>
-          <div class="work_address d-flex align-items-center">
-            <img src="./assets/FindMark_2.png" alt="" />
-            <p>Невский пр-т, д. 45</p>
-          </div>
-          <div
-            class="WhatsApp d-flex justify-content-center align-items-center"
-          >
-            <img src="./assets/whatsapp.png" alt="" />
-            <a href="">Напишите нам в WhatsApp</a>
-          </div>
-          <div class="call_us d-flex align-items-end flex-column">
-            <p>+7 383 291 92 86</p>
-            <a href="">форма обратной связи</a>
+          <div class="working_info_call d-flex">
+            <div
+              class="WhatsApp d-flex justify-content-center align-items-center"
+            >
+              <img src="./assets/whatsapp.png" alt="" />
+              <a href="">Напишите нам в WhatsApp</a>
+            </div>
+            <div class="call_us d-flex align-items-end flex-column">
+              <p>+7 383 291 92 86</p>
+              <a href="">форма обратной связи</a>
+            </div>
           </div>
         </div>
         <div class="header_lower d-flex">
-          <div class="finder w-50 d-flex">
+          <div class="finder w-60 d-flex">
             <button
               class="
                 btn btn-primary
@@ -168,7 +170,7 @@
             </div>
           </div>
           <div
-            class="account w-50 d-flex justify-content-end align-items-center"
+            class="account d-flex align-items-center"
           >
             <div class="login d-flex align-items-center">
               <img src="./assets/User.png" alt="" />
@@ -804,7 +806,15 @@
                   <div class="btn-text">Подписаться</div>
                 </button>
               </div>
-              <div class="social_media w-100 d-flex justify-content-end align-items-center">
+              <div
+                class="
+                  social_media
+                  w-100
+                  d-flex
+                  justify-content-end
+                  align-items-center
+                "
+              >
                 <img class="meta" src="./assets/meta.png" alt="" />
                 <img class="telegram" src="./assets/tg.png" alt="" />
                 <img class="twitter" src="./assets/tw.png" alt="" />
@@ -834,6 +844,8 @@
     ></script>
     <script>
       $(".owl-carousel").owlCarousel({
+        slideBy: 1,
+        items: 1.4,
         loop: true,
         margin: 15,
         nav: true,
