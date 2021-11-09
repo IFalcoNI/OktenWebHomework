@@ -134,7 +134,10 @@ p > a {
   border-radius: 0px 6px 6px 0px !important;
 }
 .account {
+  display: flex;
+  align-items: center;
   width: 50%;
+  margin-left: 60px;
   justify-content: flex-end;
 }
 .catalog {
@@ -627,6 +630,9 @@ footer {
     flex-direction: column;
     row-gap: 5px;
   }
+  ::placeholder {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 760px) {
   .item_info {
@@ -659,43 +665,48 @@ footer {
     display: none;
   }
 }
-@media screen and (max-width: 650px) {
-  .login > p,
-  .favorite > p,
-  .cart > p {
+@media screen and (min-width: 761px) {
+  .mobile-icon {
     display: none;
   }
+}
+@media screen and (max-width: 760px) {
   .account {
+    display: none !important;
     column-gap: 20px;
   }
-  .account {
+  .account_mobile {
     position: fixed;
     bottom: 0%;
     left: 0%;
+    z-index: 10;
     width: 100%;
-    height: 50px;
+    height: 60px;
     justify-content: center;
     background-color: white;
   }
-  .store_header{
+  .store_header {
     column-gap: 5px;
   }
-  .store_button{
-    padding: 5px!important;
-    font-size: 12px!important;
+  .store_button {
+    padding: 5px !important;
+    font-size: 12px !important;
   }
-  .btn-text{
-    display: none;
+  .hide-text {
+    display: none !important;
   }
-  .btn-img{
+  .btn-img {
     display: block;
   }
-  .catalog{
+  .catalog {
     width: auto;
     height: auto;
   }
-  .classfind{
-    width: 100%!important;
+  .classfind {
+    width: 100% !important;
+  }
+  .mobile-icon {
+    display: block;
   }
 }
 @media screen and (max-width: 500px) {
@@ -711,10 +722,57 @@ footer {
   .fs12 {
     font-size: 12px;
   }
-  .WhatsApp, .WhatsApp > a{
+  .WhatsApp,
+  .WhatsApp > a {
     width: 130px;
     font-size: 9px;
     text-align: center;
     padding: 0 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .item_info {
+    row-gap: 10px;
+  }
+  .item_name {
+    font-size: 10px;
+  }
+  .item_number {
+    font-size: 10px;
+  }
+  .item_price {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .item_price span {
+    font-size: 8px;
+  }
+  .slider_clutch {
+    max-height: 150px;
+  }
+  .slider_button > img {
+    width: 12px;
+    height: 12px;
+  }
+  .slider_button {
+    width: 110px;
+    height: 40px;
+    font-size: 10px !important;
+  }
+  .Carousel,
+  .carousel,
+  .carousel-item,
+  .carousel-item > img {
+    width: calc(100%);
+    height: 100% !important;
+    min-height: 220px;
+  }
+  .main > p,
+  .mobile_favorite > p,
+  .mobile_cart > p,
+  .profile > p{
+    font-size: 12px;
   }
 }

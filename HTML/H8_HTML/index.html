@@ -126,7 +126,7 @@
           </div>
         </div>
         <div class="header_lower d-flex">
-          <div class="finder w-60 d-flex">
+          <div class="finder w-100 d-flex">
             <button
               class="
                 btn btn-primary
@@ -147,7 +147,7 @@
               >
                 <div class="line position-absolute˝"></div>
               </div>
-              <div class="btn-text">Каталог</div>
+              <div class="hide-text btn-text">Каталог</div>
             </button>
             <div class="find_form d-flex">
               <input
@@ -165,13 +165,12 @@
                   align-items-center
                 "
               >
-                <div class="btn-text">Найти</div>
+                <div class="hide-text btn-text">Найти</div>
+                <img class="mobile-icon" src="./assets/search.png" alt="" />
               </button>
             </div>
           </div>
-          <div
-            class="account d-flex align-items-center"
-          >
+          <div class="account">
             <div class="login d-flex align-items-center">
               <img src="./assets/User.png" alt="" />
               <p>Войти</p>
@@ -828,7 +827,24 @@
         </div>
       </div>
     </footer>
-
+    <div class="account_mobile d-flex justify-content-evenly align-items-center">
+      <div class="main d-flex align-items-center flex-column">
+        <img src="./assets/home.png" alt="" />
+        <p>Главная</p>
+      </div>
+      <div class="mobile_favorite d-flex align-items-center flex-column">
+        <img src="./assets/Heart.png" alt="" />
+        <p>Избранное</p>
+      </div>
+      <div class="mobile_cart d-flex align-items-center flex-column">
+        <img src="./assets/Cart.png" alt="" />
+        <p>Корзина</p>
+      </div>
+      <div class="profile d-flex align-items-center flex-column">
+        <img src="./assets/User.png" alt="" />
+        <p>Профиль</p>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
