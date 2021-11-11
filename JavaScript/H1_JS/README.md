@@ -3,7 +3,7 @@
 
 ```
   hello = "hello";
-      owu = "owu";
+      let owu = "owu";
       com = "com";
       ua = "ua";
       int1 = 1;
