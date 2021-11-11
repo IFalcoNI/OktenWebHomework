@@ -2,19 +2,33 @@
   Вивести кожну змінну за допомогою: console.log , alert, document.write
 
 ```
-  hello = "hello";
+  let hello;
+      hello = "hello";
+      let owu;
       owu = "owu";
+      let com;
       com = "com";
+      let ua;
       ua = "ua";
+      let int1;
       int1 = 1;
+      let int10;
       int10 = 10;
+      let int123;
       int123 = 123;
+      let intng999;
       intng999 = -999;
+      let intPI;
       intPI = 3.14;
+      let intEPSILON;
       intEPSILON = 2.7;
+      let int16;
       int16 = 16;
-      intT = true;
-      intF = false;
+      let intT;
+      True = true;
+      let intF;
+      False = false;
+
       //log; alert; document.write;
       console.log(hello);
       console.log(owu);
@@ -22,14 +36,14 @@
       console.log(ua);
       console.log(int1);
       //
-      document.write(int123 + " ");
-      document.write(intng999 + " ");
-      document.write(intPI + " ");
-      document.write(intEPSILON + " ");
-      document.write(int16 + " ");
+      document.write(int123 + "<br/>");
+      document.write(intng999 + "<br/>");
+      document.write(intPI + "<br/>");
+      document.write(intEPSILON + "<br/>");
+      document.write(int16 + "<br/>");
       //
-      alert(intT);
-      alert(intF);
+      alert(True);
+      alert(False);
 ```
 
 - Переприсвоїти кожній змінній з завдання значення на довільне.
@@ -41,17 +55,17 @@
   let a = 100; let b = '100'; let c = true;
 - Визначити відповідний оператор в виразах що б вийшов відповідний результат.
   В однакових виразах не використовувати однакові оператори!!!
-  5 ? 6 -> true
-  5 ? 6 -> false
-  5 ? 6 -> false
-  5 ? 6 -> false
-  10 ? 10 -> true
-  10 ? 10 -> true
-  10 ? 10 -> false
-  10 ? 10 -> false
-  10 ? 10 -> false
-  123 ? '123' -> false
-  123 ? '123' -> true
+  5 < 6 -> true
+  5 > 6 -> false
+  5 === 6 -> false
+  5 >= 6 -> false
+  10 == 10 -> true
+  10 === 10 -> true
+  10 < 10 -> false
+  10 > 10 -> false
+  10 != 10 -> false
+  123 === '123' -> false
+  123 == '123' -> true
 
 - Подумайте Какие значения выведет в окно браузера следующий фрагмент кода? и почему?
   let str = "20";
@@ -60,3 +74,10 @@
   document.write(str - a + "<br/>");
   document.write(str \* "2" + "<br/>");
   document.write(str / 2 + "<br/>");
+  
+  ```
+  205
+  15
+  Error
+  10
+  ```
