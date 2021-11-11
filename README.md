@@ -3,6 +3,7 @@
 |   № / Name | Check mark  |
 | :----------: | :----------:  |
 |   [H1_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/H1_JS)  |     ✅      |
+|   [H2_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/H2_JS)  |         |
 
 ### HTML/CSS/Bootstrap
 |   № / Name | Check mark  |
