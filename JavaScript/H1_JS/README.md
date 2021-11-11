@@ -90,33 +90,34 @@
   В однакових виразах не використовувати однакові оператори!!!
 
 ```
-  5 != 6 -> true
-  5 > 6 -> false
-  5 == 6 -> false
-  5 === 6 -> false
-  10 == 10 -> true
-  10 === 10 -> true
-  10 != 10 -> false
-  10 > 10 -> false
-  10 < 10 -> false
-  123 === '123' -> false
-  123 == '123' -> true
+      5 != 6 -> true
+      5 > 6 -> false
+      5 == 6 -> false
+      5 === 6 -> false
+      10 == 10 -> true
+      10 === 10 -> true
+      10 != 10 -> false
+      10 > 10 -> false
+      10 < 10 -> false
+      123 === '123' -> false
+      123 == '123' -> true
 ```
 
 - Подумайте Какие значения выведет в окно браузера следующий фрагмент кода? и почему?
 
 ```
-  let str = "20";
-  let a = 5;
-  document.write(str + a + "<br/>");
-  document.write(str - a + "<br/>");
-  document.write(str \* "2" + "<br/>");
-  document.write(str / 2 + "<br/>");
+      let str = "20";
+      let a = 5;
+      document.write(str + a + "<br/>");
+      document.write(str - a + "<br/>");
+      document.write(str \* "2" + "<br/>");
+      document.write(str / 2 + "<br/>");
 
-### Output
+    ### Output
 
-205
-15
-Error
+    205
+    15
+    Error
+    10
 
 ```
