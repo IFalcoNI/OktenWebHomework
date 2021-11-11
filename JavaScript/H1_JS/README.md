@@ -2,21 +2,6 @@
   Вивести кожну змінну за допомогою: console.log , alert, document.write
 
 ```
-<<<<<<< HEAD:JavaScript/H1_JS/README.md
-  hello = "hello";
-      let owu = "owu";
-      com = "com";
-      ua = "ua";
-      int1 = 1;
-      int10 = 10;
-      int123 = 123;
-      intng999 = -999;
-      intPI = 3.14;
-      intEPSILON = 2.7;
-      int16 = 16;
-      intT = true;
-      intF = false;
-=======
   let hello = "hello";
       let owu = "owu";
       let com = "com";
@@ -31,7 +16,6 @@
       let True = true;
       let False = false;
 
->>>>>>> c69d6ce7ab77bea2211425edb494f177828d61f6:JavaScript/README.md
       //log; alert; document.write;
       console.log(hello);
       console.log(owu);
@@ -104,13 +88,21 @@
       console.log(typeof a);
       console.log(typeof b);
       console.log(typeof c);
+  <<<<<<< HEAD:JavaScript/H1_JS/README.md
   ```
 
 ```
 
 
+=======
+
+```
+
+> > > > > > > 898170f8d9cc8701f554275c05da505c50c1b367:JavaScript/README.md
+
 - Визначити відповідний оператор в виразах що б вийшов відповідний результат.
   В однакових виразах не використовувати однакові оператори!!!
+
 ```
 
 5 < 6 -> true
@@ -128,14 +120,16 @@
 ```
 
 - Подумайте Какие значения выведет в окно браузера следующий фрагмент кода? и почему?
-let str = "20";
-let a = 5;
-document.write(str + a + "<br/>");
-document.write(str - a + "<br/>");
-document.write(str \* "2" + "<br/>");
-document.write(str / 2 + "<br/>");
+  <<<<<<< HEAD:JavaScript/H1_JS/README.md
+  let str = "20";
+  let a = 5;
+  document.write(str + a + "<br/>");
+  document.write(str - a + "<br/>");
+  document.write(str \* "2" + "<br/>");
+  document.write(str / 2 + "<br/>");
 
 ###Output
+
 ```
 
 205
@@ -145,4 +139,24 @@ Error
 
 ```
 
+```
+=======
+  let str = "20";
+  let a = 5;
+  document.write(str + a + "<br/>");
+  document.write(str - a + "<br/>");
+  document.write(str \* "2" + "<br/>");
+  document.write(str / 2 + "<br/>");
+
+  ###Output
+
+```
+
+205
+15
+Error
+10
+
+```
+>>>>>>> 898170f8d9cc8701f554275c05da505c50c1b367:JavaScript/README.md
 ```
