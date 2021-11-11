@@ -86,7 +86,8 @@
       console.log(typeof a);
       console.log(typeof b);
       console.log(typeof c);
-```
+      
+   ```
       
    
 - Визначити відповідний оператор в виразах що б вийшов відповідний результат.
@@ -112,9 +113,11 @@
   document.write(str / 2 + "<br/>");
   
   ###Output
+  
   ```
   205
   15
   Error
   10
+  
   ```
