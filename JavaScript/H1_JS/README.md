@@ -58,19 +58,19 @@
       firstName = "Pavlo";
       middleName = "Igorovich";
       lastName = "Makohon";
-      console.log(firstName + " " + middleName + " " + lastName);
+      console.log(firstName + " " + middleName + " " + lastName); // Pavlo Igorovich MakohonName
 ```
 
 - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
   Вивести "Вітаю _Імя_ _По батькові_. Тобі _вік_ років".
 
 ```
-      let firstName = prompt("Enter firstname");
-      let middleName = prompt("Enter middleName");
+      let first_Name = prompt("Enter firstname");
+      let middle_Name = prompt("Enter middleName");
       let age = prompt("Enter your age");
       console.log(
-        "Вітаю! " + firstName + " " + middleName + ". Тобі - " + age + " років"
-      );
+        "Вітаю! " + first_Name + " " + middle_Name + ". Тобі - " + age + " років"
+      ); //Вітаю! Pavlo Igorovich. Тобі - Makohon років
 ```
 
 - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
