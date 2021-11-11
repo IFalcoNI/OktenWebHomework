@@ -58,7 +58,7 @@
       firstName = "Pavlo";
       middleName = "Igorovich";
       lastName = "Makohon";
-      console.log(firstName + " " + middleName + " " + lastName); // Pavlo Igorovich MakohonName
+      console.log(firstName + " " + middleName + " " + lastName); // Pavlo Igorovich Makohon
 ```
 
 - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
