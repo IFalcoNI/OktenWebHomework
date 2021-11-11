@@ -70,7 +70,7 @@
       let age = prompt("Enter your age");
       console.log(
         "Вітаю! " + first_Name + " " + middle_Name + ". Тобі - " + age + " років"
-      ); //Вітаю! Pavlo Igorovich. Тобі - Makohon років
+      ); //Вітаю! Pavlo Igorovich. Тобі - 20 років
 ```
 
 - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
