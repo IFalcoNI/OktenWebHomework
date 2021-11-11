@@ -1,10 +1,10 @@
 # OktenWebHomeworkTable
-## JavaScript
+### JavaScript
 |   № / Name | Check mark  |
 | :----------: | :----------:  |
 |   [H1_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/H1_JS)  |     ✅      |
 
-## HTML/CSS/Bootstrap
+### HTML/CSS/Bootstrap
 |   № / Name | Check mark  |
 | :----------: | :----------:  |
 |   [H1_HTML](https://github.com/IFalcoNI/OktenWebHomework/tree/main/HTML/H1_HTML)  |     ✅      |
