@@ -50,22 +50,6 @@
       int16 = 16.7;
       True = "It's true";
       False = "It's false";
-
-      //log; alert; document.write;
-      console.log(hello);
-      console.log(owu);
-      console.log(com);
-      console.log(ua);
-      console.log(int1);
-      //
-      document.write(int123 + "<br/>");
-      document.write(intng999 + "<br/>");
-      document.write(intPI + "<br/>");
-      document.write(intEPSILON + "<br/>");
-      document.write(int16 + "<br/>");
-      //
-      alert(True);
-      alert(False);
 ```
 
 - Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person. (Не об'єкт)
@@ -104,6 +88,7 @@
 
 - Визначити відповідний оператор в виразах що б вийшов відповідний результат.
   В однакових виразах не використовувати однакові оператори!!!
+
 ```
   5 != 6 -> true
   5 > 6 -> false
@@ -117,7 +102,10 @@
   123 === '123' -> false
   123 == '123' -> true
 ```
+
 - Подумайте Какие значения выведет в окно браузера следующий фрагмент кода? и почему?
+
+```
   let str = "20";
   let a = 5;
   document.write(str + a + "<br/>");
@@ -126,7 +114,7 @@
   document.write(str / 2 + "<br/>");
 
 ### Output
-```
+
 205
 15
 Error
