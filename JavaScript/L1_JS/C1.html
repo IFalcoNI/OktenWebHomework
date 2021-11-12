@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Task-1
+      console.log("______________Task_1______________");
+      let arr = [];
+      let result = 0;
+      for (let i = 0; i < 10; i++) {
+        arr[i] = Math.floor(Math.random() * 10);
+        result = result + arr[i];
+      }
+      console.log(arr);
+      console.log("Result = " + result);
+      // Task-2
+      console.log("______________Task_2______________");
+      let book = {
+        name: "No lama, no drama",
+        pages: "555",
+        genre: "Drama",
+      };
+      console.log(book);
+      // Task-3
+      console.log("______________Task_3______________");
+      let book2 = {
+        name: "Doctor Strange",
+        pages: "619",
+        genre: "Fantasy",
+        author: "Dr.Strange",
+      };
+      console.log(book2);
+      //Task-4
+      console.log("______________Task_4______________");
+      Books = [
+        {
+          name: "BookName_1",
+          pages: "111",
+          genre: "Fantasy",
+          author: "Dr.Strange",
+        },
+        {
+          name: "BookName_2",
+          pages: "222",
+          genre: "Fantasy",
+          author: "Dr.Strange",
+        },
+        {
+          name: "BookName_3",
+          pages: "333",
+          genre: "Fantasy",
+          author: "Dr.Strange",
+        },
+        {
+          name: "BookName_4",
+          pages: "444",
+          genre: "Fantasy",
+          author: "Dr.Strange",
+        },
+        {
+          name: "BookName_5",
+          pages: "555",
+          genre: "Fantasy",
+          author: "Dr.Strange",
+        },
+      ];
+      console.log(Books);
+
+      for (let i = 0; i < Books.length; ++i) {
+        console.log(Books[i]);
+      }
+      // Task - 5
+      console.log("______________Task_5______________");
+      let width = 10;
+      let height = 23;
+      let s = width * height;
+      console.log("Площа прямокутника - " + s + " cm^2");
+      // Task - 6
+      console.log("______________Task_6______________");
+      let heightC = 10;
+      let dC = 4;
+      let v = Math.PI * Math.pow(dC / 2, 2) * 10;
+
+      console.log("Об'єм циліндра - " + v + "cm^3");
+      // Task - 7
+      console.log("______________Task_7______________");
+      let n = 3;
+      let m = 4;
+      let k = Math.pow(Math.pow(n, 2) + Math.pow(m, 2), 0.5);
+      console.log("Гіпотенуза - " + k + " cm");
+    </script>
+  </body>
+</html>
