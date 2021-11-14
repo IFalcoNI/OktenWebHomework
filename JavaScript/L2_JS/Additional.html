@@ -26,21 +26,21 @@
       //   let n1 = Math.floor(Math.random() * 10);
       //   let n2 = Math.floor(Math.random() * 10);
       //   let n3 = Math.floor(Math.random() * 10);
-      n1 = 2;
-      n2 = 6;
-      n3 = 8;
+      n1 = 3;
+      n2 = 1;
+      n3 = 1;
       switch (true) {
-        case n1 > n2 && n1 > n3:
-          if (n2 > n3) {
-            console.log("n1-" + n3 + " 2-" + n2 + " 3-" + n1);
+        case n1 >= n2 && n1 >= n3:
+          if (n2 >= n3) {
+            console.log("1-" + n3 + " 2-" + n2 + " 3-" + n1);
             console.log("Посередині - " + n2);
           } else {
             console.log("1-" + n2 + " 2-" + n3 + " 3-" + n1);
             console.log("Посередині - " + n3);
           }
           break;
-        case n2 > n1 && n2 > n3:
-          if (n1 > n3) {
+        case n2 >= n1 && n2 >= n3:
+          if (n1 >= n3) {
             console.log("1-" + n3 + " 2-" + n1 + " 3-" + n2);
             console.log("Посередині - " + n1);
           } else {
@@ -48,8 +48,8 @@
             console.log("Посередині - " + n3);
           }
           break;
-        case n3 > n1 && n3 > n1:
-          if (n1 > n2) {
+        case n3 >= n1 && n3 >= n1:
+          if (n1 >= n2) {
             console.log("1-" + n2 + " 2-" + n1 + " 3-" + n3);
             console.log("Посередині - " + n1);
           } else {
