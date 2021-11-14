@@ -4,107 +4,155 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>T1</title>
+    <title>Document</title>
   </head>
   <body>
     <script>
-      // Task - 1
-
-      let hello = "hello";
-      let owu = "owu";
-      let com = "com";
-      let ua = "ua";
-      let int1 = 1;
-      let int10 = 10;
-      let int123 = 123;
-      let intng999 = -999;
-      let intPI = 3.14;
-      let intEPSILON = 2.7;
-      let int16 = 16;
-      let True = true;
-      let False = false;
-
-      //log; alert; document.write;
-      console.log(hello);
-      console.log(owu);
-      console.log(com);
-      console.log(ua);
-      console.log(int1);
+      // Task-1
+      console.log("______________Task_1______________");
       //
-      document.write(int123 + "<br/>");
-      document.write(intng999 + "<br/>");
-      document.write(intPI + "<br/>");
-      document.write(intEPSILON + "<br/>");
-      document.write(int16 + "<br/>");
+      // let time = prompt("Ведіть число від 0 до 59");
+      time = 5;
+      switch (true) {
+        case time > 0 && time <= 15:
+          console.log("I");
+          break;
+        case time > 15 && time <= 30:
+          console.log("II");
+          break;
+        case time > 30 && time <= 45:
+          console.log("III");
+          break;
+        case time > 45 && time < 60:
+          console.log("IV");
+          break;
+        default:
+          console.log("Number is not in range");
+      }
+      // Task-2
+      console.log("______________Task_2______________");
       //
-      alert(True);
-      alert(False);
+      // let time = prompt("Ведіть число від 1 до 31");
+      let day = 21;
+      if (day > 0 && day <= 10) {
+        console.log("I");
+      } else if (day > 10 && day <= 20) {
+        console.log("II");
+      } else if (day > 20 && day <= 31) {
+        console.log("III");
+      } else {
+        console.log("Number is not in range");
+      }
 
-      // Task - 2
-
-      hello = "helloOKten";
-      owu = "owuTheBest";
-      com = "comminity";
-      ua = "ua";
-      int1 = 1.1;
-      int10 = 1000;
-      int123 = 12345;
-      intng999 = -999999;
-      intPI = 3.1415;
-      intEPSILON = 2.69;
-      int16 = 16.7;
-      True = "It's true";
-      False = "It's false";
-
-      //log; alert; document.write;
-      console.log(hello);
-      console.log(owu);
-      console.log(com);
-      console.log(ua);
-      console.log(int1);
+      // Task-3
+      console.log("______________Task_3______________");
+      let test = false;
+      if (test) {
+        console.log("Вірно");
+      } else {
+        console.log("Неправильно");
+      }
       //
-      document.write(int123 + "<br/>");
-      document.write(intng999 + "<br/>");
-      document.write(intPI + "<br/>");
-      document.write(intEPSILON + "<br/>");
-      document.write(int16 + "<br/>");
+      console.log(test ? "Вірно" : "Неправильно");
       //
-      alert(True);
-      alert(False);
-
-      // Task - 3
-
-      let firstName = "Pavlo";
-      let middleName = "Igorovich";
-      let lastName = "Makohon";
-      console.log(firstName + " " + middleName + " " + lastName);
-
-      // Task - 4
-
-      let first_Name = prompt("Enter firstname");
-      let middle_Name = prompt("Enter middleName");
-      let age = prompt("Enter your age");
-      console.log(
-        "Вітаю! " +
-          first_Name +
-          " " +
-          middle_Name +
-          ". Тобі - " +
-          age +
-          " років"
-      );
-
+      //Task-4
+      console.log("______________Task_4______________");
+      //
+      let a = -3;
+      if (a != 0) {
+        console.log("Вірно");
+      } else {
+        console.log("Невірно");
+      }
       // Task - 5
+      console.log("______________Task_5______________");
+      //
+      Schedule = [
+        {
+          day: "Monday",
+          message: "schedule for day 1",
+        },
+        {
+          day: "Tuesday",
+          message: "schedule for day 2",
+        },
+        {
+          day: "Wednesday",
+          message: "schedule for day 3",
+        },
+        {
+          day: "Thursday",
+          message: "schedule for day 4",
+        },
+        {
+          day: "Friday",
+          message: "schedule for day 5",
+        },
+        {
+          day: "Saturday",
+          message: "schedule for day 6",
+        },
+        {
+          day: "Sunday",
+          message: "schedule for day 7",
+        },
+      ];
 
-      let a = 100;
-      let b = "100";
-      let c = true;
+      // let DayOfWeek = prompt("Введіть день тижня");
+      DayOfWeek = 7;
+      //ArrayOfObjects
+      if (DayOfWeek > 0 && DayOfWeek <= 7) {
+        console.log("Schedule for " + Schedule[DayOfWeek - 1].day);
+        console.log("Message: " + Schedule[DayOfWeek - 1].message);
+      } else {
+        console.log("Number is not in range");
+      }
+      //
 
-      console.log(typeof a); //number
-      console.log(typeof b); //string
-      console.log(typeof c); //boolean
+      switch (DayOfWeek) {
+        case 1:
+          console.log(`It's Schedule for ${DayOfWeek} day from switch`);
+          break;
+        case 2:
+          console.log(`It's Schedule for ${DayOfWeek} day from switch`);
+          break;
+        case 3:
+          console.log(`It's Schedule for ${DayOfWeek} day from switch`);
+          break;
+        case 4:
+          console.log(`It's Schedule for ${DayOfWeek} day from switch`);
+          break;
+        case 5:
+          console.log(`It's Schedule for ${DayOfWeek} day from switch`);
+          break;
+        case 6:
+          console.log(`It's Schedule for ${DayOfWeek} day from switch`);
+          break;
+        case 7:
+          console.log(`It's Schedule for ${DayOfWeek} day from switch`);
+          break;
+        default:
+          console.log("Number is not in range");
+      }
 
-      ///
+      console.log("______________Task_6______________");
+      //
+      let y = 2020;
+      if (y % 4 == 0) {
+        console.log("Високосний");
+      } else {
+        console.log("Не високосний");
+      }
+      // Task - 7
+      console.log("______________Task_7______________");
+      //
+      // let message = prompt("Яка «офіційна» назва JavaScript?", "ECMAScript");
+      message = "ECMAScript";
+      if (message == "ECMAScript") {
+        console.log("Правильно!");
+      } else {
+        console.log("Не знаєте? ECMAScript!");
+      }
     </script>
   </body>
 </html>

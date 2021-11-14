@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Title</title>
+  </head>
+  <body>
+    <script>
+      // Task-1
+      console.log("______________Task_1______________");
+      //
+      let friends = ["Ivan", "Slavik", "Grisha", "Lera", "Ira"];
+      if (friends.length >= 3) {
+        console.log("Великий масив 3 та більше елементи");
+      } else {
+        console.log("Маленький масив 3 та менше елементи");
+      }
+      // Task-2
+      console.log("______________Task_2______________");
+      //
+      //   let n1 = Math.floor(Math.random() * 10);
+      //   let n2 = Math.floor(Math.random() * 10);
+      //   let n3 = Math.floor(Math.random() * 10);
+      n1 = 2;
+      n2 = 3;
+      n3 = 6;
+      if (n1 > n2) {
+        if (n1 > n3) {
+          if (n2 > n3) {
+            console.log(n3 + " " + n2 + " " + n1);
+          }
+        }
+      }
+
+      // Task-3
+      console.log("______________Task_3______________");
+      //
+      console.log(1 + 2 < 4 ? "Мало" : "Багато");
+      //
+      //Task-4
+      console.log("______________Task_4______________");
+      //
+      NumberCheker = 0;
+      console.log(
+        NumberCheker >= -100 && NumberCheker < 0
+          ? "Negative"
+          : NumberCheker == 0
+          ? "Zero"
+          : NumberCheker > 0 && NumberCheker < 100
+          ? "Positive"
+          : "Not in range -100 to +100"
+      );
+    </script>
+  </body>
+</html>
