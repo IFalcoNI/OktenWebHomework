@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //           1. Створити пустий масив та :
+      let arr = [];
+      //          a. заповнити його 50 парними числами за допомоги циклу.
+      for (let index = 0; index < 50; index++) {
+        arr[index] = index * 2 + 2;
+        // console.log(arr[index]);
+      }
+      //          b. заповнити його 50 непарними числами за допомоги циклу.
+      for (let index = 0; index < 50; index++) {
+        arr[index] = index * 2 + 1;
+        // console.log(arr[index]);
+      }
+      //          c. Заповнити масив 20ма рандомними числами. (Google: Generate random number JS)
+      for (let index = 0; index < 20; index++) {
+        arr[index] = Math.floor(Math.random() * 10);
+        // console.log(arr[index]);
+      }
+      //          d. Заповнити масив 20ма рандомними чисалами в діапазоні від 8 до 732 (Google: Generate random number JS)
+      for (let index = 0; index < 20; index++) {
+        arr[index] = Math.floor(Math.random() * 724) + 8;
+        // console.log(arr[index]);
+        //    2. Вивести за допомогою console.log кожен третій елемен
+        if (index % 3 === 0 && index !== 0) {
+          //   console.log(arr[index - 1]);
+        }
+        //    3. Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним.
+        if (index % 3 === 0 && index !== 0 && arr[index - 1] % 2 === 0) {
+          //   console.log(arr[index - 1]);
+        }
+      }
+
+      //    4. Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним та записати їх в новий масив
+      let newArray = [];
+      let n = 0;
+      for (let index = 0; index < arr.length; index++) {
+        if (index % 3 === 0 && index !== 0 && arr[index - 1] % 2 === 0) {
+          //   console.log(arr[index - 1]);
+          newArray[n] = arr[index - 1];
+          ++n;
+        }
+      }
+
+      //    5. Вивести кожен елемент масиву, сусід справа якого є парним
+      for (let index = 0; index < arr.length; index++) {
+        if (arr[index + 1] % 2 === 0) {
+          //   console.log(arr[index]);
+        }
+      }
+
+      //    6. Є масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. Обрахувати середній чек.
+      let arrPrices = [100, 250, 50, 168, 120, 345, 188];
+      let s = 0;
+      for (let i = 0; i < arrPrices.length; i++) {
+        s += arrPrices[i];
+      }
+      //   console.log("AveragePrice= " + s / arrPrices.length);
+
+      //    7. Створити масив з рандомними значеннями, помножити всі його елементи на 5 та перемістити їх в інший масив.
+      let arrRand = [];
+      let newRandArray = [];
+      for (let index = 0; index < 10; index++) {
+        arrRand[index] = Math.floor(Math.random() * 10);
+        newRandArray[index] = arrRand[index] * 5;
+      }
+      //   console.log(arrRand);
+      //   console.log(newRandArray);
+      //
+
+      //    8. Створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо елемент є числом - додати його в інший масив.
+      let arrMix = ["str", 1, true, 5, "chr", 8.7];
+      let numArray = [];
+      let k = 0;
+      for (let index = 0; index < arrMix.length; index++) {
+        if (typeof arrMix[index] === "number") {
+          numArray[k] = arrMix[index];
+          ++k;
+        }
+      }
+      console.log(numArray);
+      
+      //   - Дано 2 масиви з рівною кількістю об'єктів.
+      //   Масиви:
+      //   let usersWithId = [
+      //       {id: 1, name: 'vasya', age: 31, status: false},
+      //       {id: 2, name: 'petya', age: 30, status: true},
+      //       {id: 3, name: 'kolya', age: 29, status: true},
+      //       {id: 4, name: 'olya', age: 28, status: false}
+      //   ];
+
+      //   let citiesWithId = [
+      //       {user_id: 3, country: 'USA', city: 'Portland'},
+      //       {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
+      //       {user_id: 2, country: 'Poland', city: 'Krakow'},
+      //       {user_id: 4, country: 'USA', city: 'Miami'}
+      //   ];
+
+      //   З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" .
+      //   Записати цей об'єкт в новий масив
+      //   Example:
+      //   let usersWithCities = [
+      //       {
+      //           id: 1, // <===
+      //           name: 'vasya',
+      //           age: 31,
+      //           status: false,
+      //           address: {
+      //               user_id: 1, // <===
+      //               country: 'Ukraine',
+      //               city: 'Ternopil'
+      //           }
+      //       },
+      //       // TO BE CONTINUED .....
+      //   ]
+
+      //   - Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
+
+      //   - Взяти масив з 10 чисел або створити його. Створити 2й порожній масив. За допомогою будь-якого циклу скопіювати значення одного масиву в інший.
+
+      //   - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
+      //   - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
+      //   - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
+    </script>
+  </body>
+</html>
