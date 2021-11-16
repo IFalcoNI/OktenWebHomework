@@ -3,10 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <title>Title</title>
+    <style>
+      body {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .users-box {
+        width: 50%;
+      }
+      .user-block {
+      }
+      .address-block {
+      }
+    </style>
   </head>
   <body>
     <!--template 1.1-->
-    <div id="users" class="users-box">
+    <div class="users-box">
       <div class="user-block">
         <h2>ID - NAME - USERNAME</h2>
         <h3>EMAIL - PHONE</h3>
@@ -265,8 +278,21 @@
         },
       ];
 
-      for (let i = 0; i < usersList.length; ++i) {
-        console.log(usersList[i].name);
+      for (let i = 0; i < usersList.length; i++) {
+        document.write(
+          `<div class="users-box">
+             <div class="user-block">
+               <h2>${usersList[i].id} - ${usersList[i].name} - ${usersList[i].username}</h2>
+               <h3>${usersList[i].email} - ${usersList[i].phone}</h3>
+               <div class="address-block">
+                 <p>City - ${usersList[i].address.city}</p>
+                  <p>Street - ${usersList[i].address.street}</p>
+                    <p>Suite - ${usersList[i].address.suite}</p>
+                   <p>Zip code - ${usersList[i].address.zipcode}</p>
+                  </div>
+               </div>
+            </div>`
+        );
       }
     </script>
   </body>
