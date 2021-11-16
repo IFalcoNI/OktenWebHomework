@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Title</title>
+  </head>
+  <body>
+    <script>
+      // Task-1
+      console.log("______________Task_1______________");
+      //
+      let friends = ["Ivan", "Slavik", "Grisha", "Lera", "Ira"];
+      if (friends.length >= 3) {
+        console.log("Великий масив 3 та більше елементи");
+      } else {
+        console.log("Маленький масив 3 та менше елементи");
+      }
+      // Task-2
+      console.log("______________Task_2______________");
+      //
+        let n1 = Math.floor(Math.random() * 100);
+        let n2 = Math.floor(Math.random() * 100);
+        let n3 = Math.floor(Math.random() * 100);
+    //  let n1 = 3;
+    //  let n2 = 1;
+    //  let n3 = 1;
+      switch (true) {
+        case n1 >= n2 && n1 >= n3:
+          if (n2 >= n3) {
+            console.log("1-" + n3 + " 2-" + n2 + " 3-" + n1);
+            console.log("Посередині - " + n2);
+          } else {
+            console.log("1-" + n2 + " 2-" + n3 + " 3-" + n1);
+            console.log("Посередині - " + n3);
+          }
+          break;
+        case n2 >= n1 && n2 >= n3:
+          if (n1 >= n3) {
+            console.log("1-" + n3 + " 2-" + n1 + " 3-" + n2);
+            console.log("Посередині - " + n1);
+          } else {
+            console.log("1-" + n1 + " 2-" + n3 + " 3-" + n2);
+            console.log("Посередині - " + n3);
+          }
+          break;
+        case n3 >= n1 && n3 >= n1:
+          if (n1 >= n2) {
+            console.log("1-" + n2 + " 2-" + n1 + " 3-" + n3);
+            console.log("Посередині - " + n1);
+          } else {
+            console.log("1-" + n1 + " 2-" + n2 + " 3-" + n3);
+            console.log("Посередині - " + n2);
+          }
+          break;
+        default:
+          console.log("Error");
+      }
+
+      // Task-3
+      console.log("______________Task_3______________");
+      //
+      console.log(1 + 2 < 4 ? "Мало" : "Багато");
+      //
+      //Task-4
+      console.log("______________Task_4______________");
+      //
+      let numberCheker = 0;
+      console.log(
+        numberCheker >= -100 && numberCheker < 0
+          ? "Negative"
+          : numberCheker == 0
+          ? "Zero"
+          : numberCheker > 0 && numberCheker < 100
+          ? "Positive"
+          : "Not in range -100 to +100"
+      );
+    </script>
+  </body>
+</html>
