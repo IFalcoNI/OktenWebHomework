@@ -105,4 +105,4 @@ const upsideDownArray = (array) => {
   console.log(array);
   return revArray;
 };
-// console.log(upsideDownArray([1, 2, 3]));
+console.log(upsideDownArray([1, 2, 3]));
