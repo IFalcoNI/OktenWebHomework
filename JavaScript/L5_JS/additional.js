@@ -56,4 +56,4 @@ const pushZero = (array) => {
   return array;
 };
 // console.log(pushZero([1, 0, 6, 0, 3]));
-// console.log(pushZero([0, 1, 2, 3, 4]));
+console.log(pushZero([0, 1, 2, 3, 4]));
