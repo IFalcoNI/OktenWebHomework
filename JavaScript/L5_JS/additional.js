@@ -42,6 +42,8 @@ const indexSwap = (array, index) => {
 // [0,1,2,3,4] => [1,2,3,4,0]
 // [0,0,1,0]   => [1,0,0,0]
 
+
+
 const pushZero = (array) => {
   if (array.length >= 1 && array.length <= 100) {
     for (let i = 0; i < array.length; ++i) {
@@ -49,11 +51,11 @@ const pushZero = (array) => {
         array.push(array[i]);
         array.splice(i, 1);
       }
-    }
+    
   } else {
     console.log("Array index not is not range");
   }
   return array;
 };
-// console.log(pushZero([1, 0, 6, 0, 3]));
-// console.log(pushZero([0, 1, 2, 3, 4]));
+console.log(pushZero([1, 0, 6, 0, 3]));
+console.log(pushZero([0, 1, 2, 3, 4]));
