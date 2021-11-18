@@ -6,6 +6,7 @@
 |   [L2_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L2_JS)  |     ✅      |
 |   [L3_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L3_JS)  |     ✅      |
 |   [L4_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L4_JS)  |          |
+|   [L5_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L5_JS)  |          |
 
 ### HTML/CSS/Bootstrap
 |   № / Name | Check mark  |
