@@ -48,6 +48,16 @@ let arr = stringToarray(myStr);
 // console.log(arr);
 // document.writeln(arr); // ['Каждый', 'охотник', 'желает', 'знать']
 
+let myStrV2 = "Каждый охотник желает знать";
+
+const stringToarrayV2 = (str) => {
+  return str.split(" ");
+};
+
+let array = stringToarrayV2(myStrV2);
+
+// document.writeln(array); // ['Каждый', 'охотник', 'желает', 'знать']
+
 // - Напишіть функцію delete_characters(str, length), яка повертає підрядок, що складається із зазначеної кількості символів.
 let strDelete = "Каждый охотник желает знать";
 
