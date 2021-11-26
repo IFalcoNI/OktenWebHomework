@@ -82,20 +82,13 @@ const monthFilter = (x) => {
 // );
 
 // - Напишите функцию cutString(str, n), которая делит строку на подстроки, состоящие из n символов.
+
 const cutString = (str, n) => {
-  let strArray = [];
-  let newStr = "";
-  let index = 0;
-  for (let i = 0; i < str.length; i++) {
-    if (i % n == 0 && i != 0) {
-      console.log(newStr);
-      index++;
-    } else {
-      newStr += str[i];
-      strArray[index] = newStr;
-      newStr = "";
-    }
+  let arr = [];
+  while (str.length) {
+    arr.push(str.substr(0, n));
+    str = str.slice(n);
   }
-  return strArray;
+  return arr;
 };
-document.writeln(cutString("наслаждение", 3)); // [нас,лаж,ден,ие]
+// document.writeln(cutString("01234567890", 5));
