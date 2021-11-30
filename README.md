@@ -7,9 +7,9 @@
 |   [L3_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L3_JS)  |     ✅      |
 |   [L4_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L4_JS)  |     ✅      |
 |   [L5_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L5_JS)  |     ✅      |
-|   [L6_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L6_JS)  |          |
-|   [L7_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L7_JS)  |          |
-|   [L8_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L8_JS)  |          |
+|   [L6_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L6_JS)  |     ✅      |
+|   [L7_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L7_JS)  |     ✅      |
+|   [L8_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L8_JS)  |     ✅      |
 |   [L9_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L9_JS)  |          |
 |   [L10_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L10_JS)  |          |
 |   [L11_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L11_JS)  |          |
