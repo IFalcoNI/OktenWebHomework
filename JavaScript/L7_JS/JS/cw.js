@@ -1,94 +1,129 @@
-// - Дано список імен.
-let n1 = "Harry..Potter";
-let n2 = "Ron---Whisley";
-let n3 = "Hermione__Granger";
-// Написати функцію, яка приймає будь яке не валідне імя, та нормалізує його в наступнйи вигляд
-// let n1 = 'Harry Potter'
-// let n2 = 'Ron Whisley'
-// let n3 = 'Hermione Granger'
+// - Створити функцію конструктор яка дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
+//     -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
+function Car(model, prod, year, maxSpeed, engine) {
+  this.model = model;
+  this.prod = prod;
+  this.year = year;
+  this.maxSpeed = maxSpeed;
+  this.engine = engine;
+  this.drive = () => {
+    console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
+  };
+  //     -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
+  this.info = () => {
+    for (let i = 0; i < Car.length; i++) {
+      console.log(Object.keys(this)[i] + "- " + Object.values(this)[i]);
+    }
+  };
+  //     -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
+  this.increaseMaxSpeed = (newSpeed) => {
+    this.maxSpeed += newSpeed;
+    console.log("works");
+  };
+  //     -- changeYear (newValue) - змінює рік випуску на значення newValue
+  this.changeYear = (changeYear) => {
+    this.year = changeYear;
+  };
+  //     -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
+  this.addDriver = (driver) => {
+    this.driver = driver;
+  };
+}
 
-// - створити функцію, яка генерує масив рандомних числових цілих значень в діапазоні від 0 до 100.
-const randArray = (len) => {
-  let array = [];
-  for (let index = 0; index < len; index++) {
-    array[index] = Math.floor(Math.random() * 100);
+let myNewCar = new Car("Mercedes", "Germany", 2020, 220, 4.0);
+// console.log(myNewCar);
+// myNewCar.drive();
+// myNewCar.info();
+// myNewCar.changeYear(2021);
+// myNewCar.info();
+// myNewCar.addDriver("ProDriver");
+// myNewCar.increaseMaxSpeed(50);
+// myNewCar.drive();
+
+// - (Те саме, тільки через клас)
+// Створити клас який дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
+class MyCar {
+  constructor(model, prod, year, maxSpeed, engine) {
+    this.model = model;
+    this.prod = prod;
+    this.year = year;
+    this.maxSpeed = maxSpeed;
+    this.engine = engine;
   }
-  return array;
-};
-// console.log(randArray(10));
-// - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень. Відсортувати його за допомоги sort
-const ascendingSort = (a, b) => {
-  return a - b;
-};
-// console.log(randArray(10).sort(ascendingSort));
+  // -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
+  drive() {
+    console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
+  }
+  //     -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
+  info() {
+    for (let i = 0; i < Car.length; i++) {
+      console.log(Object.keys(this)[i] + "- " + Object.values(this)[i]);
+    }
+  }
+  //     -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
+  increaseMaxSpeed(newSpeed) {
+    this.maxSpeed += newSpeed;
+  }
+  //     -- changeYear (newValue) - змінює рік випуску на значення newValue
+  changeYear(changeYear) {
+    this.year = changeYear;
+  }
+  //     -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
+  addDriver(driver) {
+    this.driver = driver;
+  }
+}
 
-// - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень. відфільтрувати  його за допомоги filter, залишивши тільки парні числа
-const oddFilter = (x) => {
-  return x % 2 == 0;
-};
-// console.log(randArray(10).filter(oddFilter));
+let newCar = new MyCar("Porshe", "Germany", 2021, 240, 3.0);
+// console.log(newCar);
+// newCar.drive();
+// newCar.info();
+// newCar.changeYear(2019);
+// newCar.info();
+// newCar.addDriver("PorsheDriver");
+// console.log(newCar);
+// newCar.increaseMaxSpeed(70);
+// newCar.drive();
 
-// - створити масив рандомних цілих числових значень (або згенерувати, за допомоги попередньої функції) . за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
-const arrayToString = (x) => {
-  return x.toString();
-};
-
-// console.log(randArray(10).map(arrayToString));
-// - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
-
-let nums = [11, 21, 3];
-
-const ascending = (a, b) => {
-  return a - b;
-};
-const descending = (a, b) => {
-  return b - a;
-};
-const sortNums = (direction) => {
-  let sorted;
-  direction === "ascending"
-    ? (sorted = nums.sort(ascending))
-    : direction === "descending"
-    ? (sorted = nums.sort(descending))
-    : (sorted = "Invalid input");
-
-  return sorted;
-};
-
-// console.log(sortNums("ascending")); // [3,11,21]
-// console.log(sortNums("descending")); // [21,11,3]
-// console.log(sortNums("abra cadabra"));
-
-// - є масив
-//  -- відсортувати його за спаданням за monthDuration
-//  -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
-let coursesAndDurationArray = [
-  { title: "JavaScript Complex", monthDuration: 5 },
-  { title: "Java Complex", monthDuration: 6 },
-  { title: "Python Complex", monthDuration: 6 },
-  { title: "QA Complex", monthDuration: 4 },
-  { title: "FullStack", monthDuration: 7 },
-  { title: "Frontend", monthDuration: 4 },
+// -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
+class Popelushka {
+  constructor(name, age, shoe_size) {
+    this.name = name;
+    this.age = age;
+    this.shoe_size = shoe_size;
+  }
+}
+let popelushkaArray = [
+  new Popelushka("PopGirl1", 18, 36),
+  new Popelushka("PopGirl2", 20, 38),
+  new Popelushka("PopGirl3", 21, 39),
+  new Popelushka("PopGirl4", 18, 34),
+  new Popelushka("PopGirl5", 19, 37),
+  new Popelushka("PopGirl6", 18, 35),
 ];
-
-const sortByMonthDuration = (a, b) => {
-  return b.monthDuration - a.monthDuration;
-};
-const monthFilter = (x) => {
-  return x.monthDuration > 5;
-};
-// console.log(
-//   coursesAndDurationArray.filter(monthFilter).sort(sortByMonthDuration)
-// );
-
-// - Напишите функцию cutString(str, n), которая делит строку на подстроки, состоящие из n символов.
-
-const cutString = (str, n) => {
-  let arr = [];
-  while (str.length) {
-    arr.push(str.substr(0, n));
-    str = str.slice(n);
+// Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
+class Prince {
+  constructor(name, age, foundedShoe) {
+    this.name = name;
+    this.age = age;
+    this.foundedShoe = foundedShoe;
   }
-  return arr;
+}
+let prince = new Prince("Prince I", 25, 37);
+
+// За допомоги циклу знайти яка попелюшка повинна бути з принцом.
+popelushkaArray.forEach((element) => {
+  if (element.shoe_size === prince.foundedShoe) {
+    // console.log(
+    //   `Your girl ${element.name} with shoe size "${element.shoe_size}"`
+    // );
+  }
+});
+
+// Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+const findGirl = (girl) => {
+  if (girl.shoe_size === prince.foundedShoe) {
+    return girl;
+  }
 };
-// document.writeln(cutString("01234567890", 5));
+console.log(popelushkaArray.find(findGirl));
