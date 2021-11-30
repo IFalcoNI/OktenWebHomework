@@ -1,129 +1,97 @@
-// - Створити функцію конструктор яка дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
-//     -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
-function Car(model, prod, year, maxSpeed, engine) {
-  this.model = model;
-  this.prod = prod;
-  this.year = year;
-  this.maxSpeed = maxSpeed;
-  this.engine = engine;
-  this.drive = () => {
-    console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
-  };
-  //     -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
-  this.info = () => {
-    for (let i = 0; i < Car.length; i++) {
-      console.log(Object.keys(this)[i] + "- " + Object.values(this)[i]);
-    }
-  };
-  //     -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
-  this.increaseMaxSpeed = (newSpeed) => {
-    this.maxSpeed += newSpeed;
-    console.log("works");
-  };
-  //     -- changeYear (newValue) - змінює рік випуску на значення newValue
-  this.changeYear = (changeYear) => {
-    this.year = changeYear;
-  };
-  //     -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
-  this.addDriver = (driver) => {
-    this.driver = driver;
-  };
-}
+// Взяти файл template_2.html та працювати в ньому
+// 1) Напишіть код, який :
+//     a) змінює колір тексту елемнту з ід main_header на назву групи в якій ви вчитесь (mon-year)
 
-let myNewCar = new Car("Mercedes", "Germany", 2020, 220, 4.0);
-// console.log(myNewCar);
-// myNewCar.drive();
-// myNewCar.info();
-// myNewCar.changeYear(2021);
-// myNewCar.info();
-// myNewCar.addDriver("ProDriver");
-// myNewCar.increaseMaxSpeed(50);
-// myNewCar.drive();
+// document.getElementById("main_header").classList.add("sep-2021");
 
-// - (Те саме, тільки через клас)
-// Створити клас який дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
-class MyCar {
-  constructor(model, prod, year, maxSpeed, engine) {
-    this.model = model;
-    this.prod = prod;
-    this.year = year;
-    this.maxSpeed = maxSpeed;
-    this.engine = engine;
-  }
-  // -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
-  drive() {
-    console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
-  }
-  //     -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
-  info() {
-    for (let i = 0; i < Car.length; i++) {
-      console.log(Object.keys(this)[i] + "- " + Object.values(this)[i]);
-    }
-  }
-  //     -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
-  increaseMaxSpeed(newSpeed) {
-    this.maxSpeed += newSpeed;
-  }
-  //     -- changeYear (newValue) - змінює рік випуску на значення newValue
-  changeYear(changeYear) {
-    this.year = changeYear;
-  }
-  //     -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
-  addDriver(driver) {
-    this.driver = driver;
-  }
-}
+//     b) робить шириниу елементу ul 400px
 
-let newCar = new MyCar("Porshe", "Germany", 2021, 240, 3.0);
-// console.log(newCar);
-// newCar.drive();
-// newCar.info();
-// newCar.changeYear(2019);
-// newCar.info();
-// newCar.addDriver("PorsheDriver");
-// console.log(newCar);
-// newCar.increaseMaxSpeed(70);
-// newCar.drive();
+// let ul = document.getElementsByTagName("ul");
+// for (const item of ul) {
+//   item.style.width = "400px";
+// }
 
-// -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
-class Popelushka {
-  constructor(name, age, shoe_size) {
-    this.name = name;
-    this.age = age;
-    this.shoe_size = shoe_size;
-  }
-}
-let popelushkaArray = [
-  new Popelushka("PopGirl1", 18, 36),
-  new Popelushka("PopGirl2", 20, 38),
-  new Popelushka("PopGirl3", 21, 39),
-  new Popelushka("PopGirl4", 18, 34),
-  new Popelushka("PopGirl5", 19, 37),
-  new Popelushka("PopGirl6", 18, 35),
-];
-// Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
-class Prince {
-  constructor(name, age, foundedShoe) {
-    this.name = name;
-    this.age = age;
-    this.foundedShoe = foundedShoe;
-  }
-}
-let prince = new Prince("Prince I", 25, 37);
+//     c) робить шириниу всіх елементів з класом linkList шириною 50%
 
-// За допомоги циклу знайти яка попелюшка повинна бути з принцом.
-popelushkaArray.forEach((element) => {
-  if (element.shoe_size === prince.foundedShoe) {
-    // console.log(
-    //   `Your girl ${element.name} with shoe size "${element.shoe_size}"`
-    // );
-  }
-});
+// let linkLists = document.getElementsByClassName("linklist");
+// for (const item of linkLists) {
+//   item.style.width = "50%";
+// }
+//     d) отримує текст який зберігається в елементі з класом listElement2
 
-// Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
-const findGirl = (girl) => {
-  if (girl.shoe_size === prince.foundedShoe) {
-    return girl;
-  }
-};
-// console.log(popelushkaArray.find(findGirl));
+// console.log(document.getElementsByClassName("listElement2")[0].textContent);
+
+// let text = document.getElementsByClassName("listElement2");
+// for (const iterator of text) {
+//   console.log(iterator.textContent);
+// }
+
+//     e) отримує всі елементи li та змінює ім колір фону на сірий
+
+// let lists = document.getElementsByTagName("li");
+// for (const item of lists) {
+//   item.style.background = "silver";
+// }
+
+//     f) отримує всі елементи 'a' та додає їм клас anchor
+// let a = document.getElementsByTagName("li");
+// for (const item of a) {
+//   item.classList.add("anchor");
+// }
+
+//     g) отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3, змінює йому розмір тексту на 40 пікселів
+
+// let a2 = document.getElementsByTagName("li");
+// for (const item of a2) {
+//   if (item.textContent === "link3") {
+//     item.style.fontSize = "40px";
+//   }
+// }
+
+//     h) отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
+
+// let a3 = document.getElementsByTagName("li");
+// for (const item of a3) {
+//   item.classList.add(`element_${item.textContent}`);
+// }
+
+//     i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
+
+// let color = prompt("Color", "Blue");
+// let subHead = document.getElementsByClassName("sub-header");
+// for (const iterator of subHead) {
+//   iterator.style.backgroundColor = color;
+// }
+
+//     j) отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment . Колір отримати з prompt()
+
+// let subHead2 = document.getElementsByClassName("sub-header");
+// for (const iterator of subHead2) {
+//   if (iterator.textContent === "content 2 segment") {
+//     iterator.style.backgroundColor = prompt("Color-2", "Red");
+//   }
+// }
+
+//     k) отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
+
+// let text = prompt(
+//   "Input text",
+//   "Custom text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, laborum!"
+// );
+// let content = document.getElementsByClassName("content_1");
+// for (const iterator of content) {
+//   iterator.textContent = text;
+// }
+
+//     l) отримати елементи p та змінити їм padding на 20px
+
+// let p = document.getElementsByTagName("p");
+// for (const iterator of p) {
+//   iterator.style.padding = "20px";
+// }
+
+//     m) отримати елементи з класом text2 та змінити їм текст на назву групи (mon-year. Пример sep-2021)
+// let text2 = document.getElementsByClassName("text2");
+// for (const iterator of text2) {
+//   iterator.textContent = "sep-2021";
+// }
