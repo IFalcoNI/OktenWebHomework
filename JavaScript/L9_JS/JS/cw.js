@@ -77,138 +77,139 @@ let simpsons = [
 // }
 
 // - Є масив
-let coursesArray = [
-  {
-    title: "JavaScript Complex",
-    monthDuration: 5,
-    hourDuration: 909,
-    modules: [
-      "html",
-      "css",
-      "js",
-      "mysql",
-      "mongodb",
-      "react",
-      "angular",
-      "aws",
-      "docker",
-      "git",
-      "node.js",
-    ],
-  },
-  {
-    title: "Java Complex",
-    monthDuration: 6,
-    hourDuration: 909,
-    modules: [
-      "html",
-      "css",
-      "js",
-      "mysql",
-      "mongodb",
-      "angular",
-      "aws",
-      "docker",
-      "git",
-      "java core",
-      "java advanced",
-    ],
-  },
-  {
-    title: "Python Complex",
-    monthDuration: 6,
-    hourDuration: 909,
-    modules: [
-      "html",
-      "css",
-      "js",
-      "mysql",
-      "mongodb",
-      "angular",
-      "aws",
-      "docker",
-      "python core",
-      "python advanced",
-    ],
-  },
-  {
-    title: "QA Complex",
-    monthDuration: 4,
-    hourDuration: 909,
-    modules: ["html", "css", "js", "mysql", "mongodb", "git", "QA/QC"],
-  },
-  {
-    title: "FullStack",
-    monthDuration: 7,
-    hourDuration: 909,
-    modules: [
-      "html",
-      "css",
-      "js",
-      "mysql",
-      "mongodb",
-      "react",
-      "angular",
-      "aws",
-      "docker",
-      "git",
-      "node.js",
-      "python",
-      "java",
-    ],
-  },
-  {
-    title: "Frontend",
-    monthDuration: 4,
-    hourDuration: 909,
-    modules: [
-      "html",
-      "css",
-      "js",
-      "mysql",
-      "mongodb",
-      "react",
-      "angular",
-      "aws",
-      "docker",
-      "git",
-      "sass",
-    ],
-  },
-];
+
+// let coursesArray = [
+//   {
+//     title: "JavaScript Complex",
+//     monthDuration: 5,
+//     hourDuration: 909,
+//     modules: [
+//       "html",
+//       "css",
+//       "js",
+//       "mysql",
+//       "mongodb",
+//       "react",
+//       "angular",
+//       "aws",
+//       "docker",
+//       "git",
+//       "node.js",
+//     ],
+//   },
+//   {
+//     title: "Java Complex",
+//     monthDuration: 6,
+//     hourDuration: 909,
+//     modules: [
+//       "html",
+//       "css",
+//       "js",
+//       "mysql",
+//       "mongodb",
+//       "angular",
+//       "aws",
+//       "docker",
+//       "git",
+//       "java core",
+//       "java advanced",
+//     ],
+//   },
+//   {
+//     title: "Python Complex",
+//     monthDuration: 6,
+//     hourDuration: 909,
+//     modules: [
+//       "html",
+//       "css",
+//       "js",
+//       "mysql",
+//       "mongodb",
+//       "angular",
+//       "aws",
+//       "docker",
+//       "python core",
+//       "python advanced",
+//     ],
+//   },
+//   {
+//     title: "QA Complex",
+//     monthDuration: 4,
+//     hourDuration: 909,
+//     modules: ["html", "css", "js", "mysql", "mongodb", "git", "QA/QC"],
+//   },
+//   {
+//     title: "FullStack",
+//     monthDuration: 7,
+//     hourDuration: 909,
+//     modules: [
+//       "html",
+//       "css",
+//       "js",
+//       "mysql",
+//       "mongodb",
+//       "react",
+//       "angular",
+//       "aws",
+//       "docker",
+//       "git",
+//       "node.js",
+//       "python",
+//       "java",
+//     ],
+//   },
+//   {
+//     title: "Frontend",
+//     monthDuration: 4,
+//     hourDuration: 909,
+//     modules: [
+//       "html",
+//       "css",
+//       "js",
+//       "mysql",
+//       "mongodb",
+//       "react",
+//       "angular",
+//       "aws",
+//       "docker",
+//       "git",
+//       "sass",
+//     ],
+//   },
+// ];
 
 // Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
 // Приклад структири знаходиться у файлі example.png
 
-for (const iterator of coursesArray) {
-  let div = document.createElement("div");
-  div.setAttribute("class", "member");
-  //
-  let title = document.createElement("h1");
-  title.setAttribute("class", "title");
-  title.innerHTML = iterator.title;
-  //
-  let monthDuration = document.createElement("h3");
-  monthDuration.setAttribute("class", "monthDuration");
-  monthDuration.innerHTML = iterator.monthDuration + " months";
-  //
-  let hourDuration = document.createElement("h4");
-  hourDuration.setAttribute("class", "hourDuration");
-  hourDuration.innerHTML = iterator.hourDuration + " hours";
+// for (const iterator of coursesArray) {
+//   let div = document.createElement("div");
+//   div.setAttribute("class", "courses");
+//   //
+//   let title = document.createElement("h1");
+//   title.setAttribute("class", "title");
+//   title.innerHTML = iterator.title;
+//   //
+//   let monthDuration = document.createElement("h3");
+//   monthDuration.setAttribute("class", "monthDuration");
+//   monthDuration.innerHTML = iterator.monthDuration + " months";
+//   //
+//   let hourDuration = document.createElement("h4");
+//   hourDuration.setAttribute("class", "hourDuration");
+//   hourDuration.innerHTML = iterator.hourDuration + " hours";
 
-  let duration = document.createElement("div");
-  duration.setAttribute("class", "duration");
-  duration.append(monthDuration, hourDuration);
-  //
+//   let duration = document.createElement("div");
+//   duration.setAttribute("class", "duration");
+//   duration.append(monthDuration, hourDuration);
+//   //
 
-  let modules = document.createElement("ul");
-  modules.innerText = "Technologies";
-  for (const module of iterator.modules) {
-    let li = document.createElement("li");
-    li.innerHTML = module;
-    modules.appendChild(li);
-  }
+//   let modules = document.createElement("ul");
+//   modules.innerText = "Technologies";
+//   for (const module of iterator.modules) {
+//     let li = document.createElement("li");
+//     li.innerHTML = module;
+//     modules.appendChild(li);
+//   }
 
-  div.append(title, duration, modules);
-  document.body.appendChild(div);
-}
+//   div.append(title, duration, modules);
+//   document.body.appendChild(div);
+// }
