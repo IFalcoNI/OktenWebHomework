@@ -184,7 +184,6 @@ for (const iterator of courses) {
   resultsBlock.setAttribute("class", "results");
   resultsBlock.append(price, avgResult);
   //
-
   courses.append(titleBlock, durationBlock, modules, resultsBlock);
   document.body.appendChild(courses);
 }
