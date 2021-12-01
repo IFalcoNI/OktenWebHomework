@@ -148,6 +148,9 @@ for (const iterator of courses) {
   title.setAttribute("class", "title");
   title.innerHTML = iterator.title;
   //
+  let titleBlock = document.createElement("div");
+  titleBlock.appendChild(title);
+  //
   let monthDuration = document.createElement("h3");
   monthDuration.setAttribute("class", "monthDuration");
   monthDuration.innerHTML = iterator.monthDuration + " months";
@@ -156,9 +159,9 @@ for (const iterator of courses) {
   hourDuration.setAttribute("class", "hourDuration");
   hourDuration.innerHTML = iterator.hourDuration + " hours";
   //
-  let duration = document.createElement("div");
-  duration.setAttribute("class", "duration");
-  duration.append(monthDuration, hourDuration);
+  let durationBlock = document.createElement("div");
+  durationBlock.setAttribute("class", "duration");
+  durationBlock.append(monthDuration, hourDuration);
   //
 
   let modules = document.createElement("ul");
@@ -177,11 +180,11 @@ for (const iterator of courses) {
   avgResult.setAttribute("class", "avgResult");
   avgResult.innerHTML = "Average result " + iterator.avgResult;
   //
-  let results = document.createElement("div");
-  results.setAttribute("class", "duration");
-  results.append(price, avgResult);
+  let resultsBlock = document.createElement("div");
+  resultsBlock.setAttribute("class", "results");
+  resultsBlock.append(price, avgResult);
   //
 
-  courses.append(title, duration, modules, results);
+  courses.append(titleBlock, durationBlock, modules, resultsBlock);
   document.body.appendChild(courses);
 }
