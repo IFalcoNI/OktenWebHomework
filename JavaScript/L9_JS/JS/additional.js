@@ -176,13 +176,17 @@ for (const iterator of courses) {
   price.setAttribute("class", "price");
   price.innerHTML = "Price " + iterator.price;
   //
+  let rating = document.createElement("h4");
+  rating.setAttribute("class", "rating");
+  rating.innerHTML = "Rating " + iterator.rating;
+  //
   let avgResult = document.createElement("h3");
   avgResult.setAttribute("class", "avgResult");
   avgResult.innerHTML = "Average result " + iterator.avgResult;
   //
   let resultsBlock = document.createElement("div");
   resultsBlock.setAttribute("class", "results");
-  resultsBlock.append(price, avgResult);
+  resultsBlock.append(price, rating, avgResult);
   //
   courses.append(titleBlock, durationBlock, modules, resultsBlock);
   document.body.appendChild(courses);
