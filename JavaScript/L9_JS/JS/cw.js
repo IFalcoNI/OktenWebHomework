@@ -1,97 +1,214 @@
-// Взяти файл template_2.html та працювати в ньому
-// 1) Напишіть код, який :
-//     a) змінює колір тексту елемнту з ід main_header на назву групи в якій ви вчитесь (mon-year)
+// - є масив
+let simpsons = [
+  {
+    name: "Bart",
+    surname: "Simpson",
+    age: 10,
+    info: "Бартолом'ю ДжоДжо «Барт» Сімпсон (англ. Bartholomew JoJo «Bart» Simpson) — один із головних героїв мультиплікаційного серіалу Сімпсони. Барт — найстарша дитина Гомера і Мардж Сімпсон. У нього також є дві молодші сестри — Ліса і Меґґі. Барт є втіленням образу бешкетника та посереднього учня у школі. Разом зі своїм батьком Барт є одним із найвідоміших персонажів у цьому серіалі.",
+    photo: "https://upload.wikimedia.org/wikipedia/uk/a/aa/Bart_simpson.png",
+  },
+  {
+    name: "Homer",
+    surname: "Simpson",
+    age: 40,
+    info: "Гомер Джей Сімпсон (англ. Homer Jay Simpson) — один із головних героїв мультсеріалу «Сімпсони». Гомер — грубий і неввічливий батько родини, він має очевидні вади: товстий, лисий і не дуже розумний. Нерідко він поводиться як блазень, абсурдно, егоїстично і нетактовно, але все ж лишається симпатичним.",
+    photo:
+      "http://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png",
+  },
+  {
+    name: "Marge",
+    surname: "Simpson",
+    age: 38,
+    info: "Ма́рджори Жакли́н «Мардж» Си́мпсон (в девичестве Бувье́) (англ. Marjorie Jacqueline «Marge» Simpson) — постоянный персонаж мультипликационного сериала «Симпсоны», её озвучивает Джулия Кавнер. Обычно носит зелёное платье, красные балетки, на шее — ожерелье из искусственного жемчуга и ездит на оранжевом универсале. У неё шикарные синие волосы, которые она обычно собирает в очень высокую причёску. Глаза цвета ореха (19s6e). Основное занятие — домохозяйка, большую часть времени проводит в заботе о доме, детях и Гомере. Образ Мардж копирует стереотип провинциальной американской домохозяйки 50-х годов. Мардж — единственный член семьи, посещающий церковь добровольно. Старается поддерживать нравственность не только своей семьи, но и всего города. Отлично готовит, особенно славятся её свиные отбивные и зефир. Любимое блюдо — лапша с маслом.",
+    photo: "https://upload.wikimedia.org/wikipedia/ru/0/0b/Marge_Simpson.png",
+  },
+  {
+    name: "Lisa",
+    surname: "Simpson",
+    age: 9,
+    info: "Ли́за Мари́ Си́мпсон (англ. Lisa Marie Simpson) — героиня мультипликационного сериала «Симпсоны». Средний ребёнок в семье, восьмилетняя девочка, выделяющаяся среди остальных Симпсонов прежде всего своим умом и рассудительностью.",
+    photo: "https://upload.wikimedia.org/wikipedia/ru/e/ec/Lisa_Simpson.png",
+  },
+  {
+    name: "Maggie",
+    surname: "Simpson",
+    age: 1,
+    info: "Ма́ргарет Эвелин «Мэ́гги» Си́мпсон (англ. Margaret Evelyn “Maggie” Simpson) — персонаж мультсериала «Симпсоны». Впервые появилась на телевидении в шоу Трейси Ульман, в короткометражке Good Night (англ.)русск. 19 апреля 1987 года. Мэгги была придумана и разработана карикатуристом Мэттом Грейнингом, пока он ждал встречи с Джеймсом Л. Бруксом. Названа в честь младшей сестры Грейнинга. После появления в шоу Трейси Ульман, через три года семья Симпсонов получила собственный сериал на телеканале Fox, дебют произошёл 17 декабря 1989 года.",
+    photo: "https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png",
+  },
+];
+// Проітерувати його, створиши для кожного елементу масиву <div class='member'>.
 
-// document.getElementById("main_header").classList.add("sep-2021");
-
-//     b) робить шириниу елементу ul 400px
-
-// let ul = document.getElementsByTagName("ul");
-// for (const item of ul) {
-//   item.style.width = "400px";
+// for (const iterator of simpsons) {
+//   let div = document.createElement("div");
+//   div.setAttribute("class", "member");
+//   div.innerHTML = iterator.name + " " + iterator.surname;
+//   document.body.appendChild(div);
 // }
 
-//     c) робить шириниу всіх елементів з класом linkList шириною 50%
+// - взяти попередній масив з сімпсонами.
+// Проітерувати його, створиши для кожного елементу масиву <div class='member'>. Для кожної властивості елементу створити окремий блок, та помістити його у div.member
 
-// let linkLists = document.getElementsByClassName("linklist");
-// for (const item of linkLists) {
-//   item.style.width = "50%";
-// }
-//     d) отримує текст який зберігається в елементі з класом listElement2
+// for (const iterator of simpsons) {
+//   let div = document.createElement("div");
+//   div.setAttribute("class", "member");
+//   //
+//   let name = document.createElement("div");
+//   name.setAttribute("class", "name");
+//   name.innerHTML = iterator.name;
+//   //
+//   let surname = document.createElement("div");
+//   surname.setAttribute("class", "surname");
+//   surname.innerHTML = iterator.surname;
+//   //
+//   let age = document.createElement("div");
+//   age.setAttribute("class", "age");
+//   age.innerHTML = iterator.age;
+//   //
+//   let info = document.createElement("div");
+//   info.setAttribute("class", "info");
+//   info.innerHTML = iterator.info;
+//   //
+//   let photo = document.createElement("img");
+//   photo.src = iterator.photo;
 
-// console.log(document.getElementsByClassName("listElement2")[0].textContent);
-
-// let text = document.getElementsByClassName("listElement2");
-// for (const iterator of text) {
-//   console.log(iterator.textContent);
-// }
-
-//     e) отримує всі елементи li та змінює ім колір фону на сірий
-
-// let lists = document.getElementsByTagName("li");
-// for (const item of lists) {
-//   item.style.background = "silver";
-// }
-
-//     f) отримує всі елементи 'a' та додає їм клас anchor
-// let a = document.getElementsByTagName("li");
-// for (const item of a) {
-//   item.classList.add("anchor");
-// }
-
-//     g) отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3, змінює йому розмір тексту на 40 пікселів
-
-// let a2 = document.getElementsByTagName("li");
-// for (const item of a2) {
-//   if (item.textContent === "link3") {
-//     item.style.fontSize = "40px";
-//   }
+//   div.append(photo, name, surname, age, info);
+//   document.body.appendChild(div);
 // }
 
-//     h) отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
+// - Є масив
+let coursesArray = [
+  {
+    title: "JavaScript Complex",
+    monthDuration: 5,
+    hourDuration: 909,
+    modules: [
+      "html",
+      "css",
+      "js",
+      "mysql",
+      "mongodb",
+      "react",
+      "angular",
+      "aws",
+      "docker",
+      "git",
+      "node.js",
+    ],
+  },
+  {
+    title: "Java Complex",
+    monthDuration: 6,
+    hourDuration: 909,
+    modules: [
+      "html",
+      "css",
+      "js",
+      "mysql",
+      "mongodb",
+      "angular",
+      "aws",
+      "docker",
+      "git",
+      "java core",
+      "java advanced",
+    ],
+  },
+  {
+    title: "Python Complex",
+    monthDuration: 6,
+    hourDuration: 909,
+    modules: [
+      "html",
+      "css",
+      "js",
+      "mysql",
+      "mongodb",
+      "angular",
+      "aws",
+      "docker",
+      "python core",
+      "python advanced",
+    ],
+  },
+  {
+    title: "QA Complex",
+    monthDuration: 4,
+    hourDuration: 909,
+    modules: ["html", "css", "js", "mysql", "mongodb", "git", "QA/QC"],
+  },
+  {
+    title: "FullStack",
+    monthDuration: 7,
+    hourDuration: 909,
+    modules: [
+      "html",
+      "css",
+      "js",
+      "mysql",
+      "mongodb",
+      "react",
+      "angular",
+      "aws",
+      "docker",
+      "git",
+      "node.js",
+      "python",
+      "java",
+    ],
+  },
+  {
+    title: "Frontend",
+    monthDuration: 4,
+    hourDuration: 909,
+    modules: [
+      "html",
+      "css",
+      "js",
+      "mysql",
+      "mongodb",
+      "react",
+      "angular",
+      "aws",
+      "docker",
+      "git",
+      "sass",
+    ],
+  },
+];
 
-// let a3 = document.getElementsByTagName("li");
-// for (const item of a3) {
-//   item.classList.add(`element_${item.textContent}`);
-// }
+// Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
+// Приклад структири знаходиться у файлі example.png
 
-//     i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
+for (const iterator of coursesArray) {
+  let div = document.createElement("div");
+  div.setAttribute("class", "member");
+  //
+  let title = document.createElement("h1");
+  title.setAttribute("class", "title");
+  title.innerHTML = iterator.title;
+  //
+  let monthDuration = document.createElement("h3");
+  monthDuration.setAttribute("class", "monthDuration");
+  monthDuration.innerHTML = iterator.monthDuration + " months";
+  //
+  let hourDuration = document.createElement("h4");
+  hourDuration.setAttribute("class", "hourDuration");
+  hourDuration.innerHTML = iterator.hourDuration + " hours";
 
-// let color = prompt("Color", "Blue");
-// let subHead = document.getElementsByClassName("sub-header");
-// for (const iterator of subHead) {
-//   iterator.style.backgroundColor = color;
-// }
+  let duration = document.createElement("div");
+  duration.setAttribute("class", "duration");
+  duration.append(monthDuration, hourDuration);
+  //
 
-//     j) отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment . Колір отримати з prompt()
+  let modules = document.createElement("ul");
+  modules.innerText = "Technologies";
+  for (const module of iterator.modules) {
+    let li = document.createElement("li");
+    li.innerHTML = module;
+    modules.appendChild(li);
+  }
 
-// let subHead2 = document.getElementsByClassName("sub-header");
-// for (const iterator of subHead2) {
-//   if (iterator.textContent === "content 2 segment") {
-//     iterator.style.backgroundColor = prompt("Color-2", "Red");
-//   }
-// }
-
-//     k) отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
-
-// let text = prompt(
-//   "Input text",
-//   "Custom text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, laborum!"
-// );
-// let content = document.getElementsByClassName("content_1");
-// for (const iterator of content) {
-//   iterator.textContent = text;
-// }
-
-//     l) отримати елементи p та змінити їм padding на 20px
-
-// let p = document.getElementsByTagName("p");
-// for (const iterator of p) {
-//   iterator.style.padding = "20px";
-// }
-
-//     m) отримати елементи з класом text2 та змінити їм текст на назву групи (mon-year. Пример sep-2021)
-// let text2 = document.getElementsByClassName("text2");
-// for (const iterator of text2) {
-//   iterator.textContent = "sep-2021";
-// }
+  div.append(title, duration, modules);
+  document.body.appendChild(div);
+}
