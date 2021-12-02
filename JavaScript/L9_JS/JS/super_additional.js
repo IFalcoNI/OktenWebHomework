@@ -329,22 +329,26 @@ let rules = [
 // -Є масив котрий характеризує правила. Створити скрипт який ітерує цей масив, та робить з кожне правило в окремому блоці.
 // При цому в блоці, номер правила записати в свій блок, текст правила записати в свій окремий блок.
 // Результатом відпрацювання скріпта повинна бути структура яка міститься в блоці wrap файла rule.html
-let number = 0;
-let wrap = document.createElement("div");
-wrap.setAttribute("class", "wrap");
-for (const item of rules) {
-  let rules = document.createElement("div");
-  rules.setAttribute("class", "rules rule" + number);
-  //   rules.classList.add("rule" + number);
-  //
-  let h2 = document.createElement("h2");
-  h2.innerText = item.title;
-  //
-  let p = document.createElement("p");
-  p.innerText = item.body;
-  //
-  rules.append(h2, p);
-  wrap.appendChild(rules);
-  ++number;
-}
-document.body.appendChild(wrap);
+
+// let number = 0;
+// let h1 = document.createElement("h1");
+// h1.innerText = "Правила бойцовского клуба";
+// let wrap = document.createElement("div");
+// wrap.appendChild(h1);
+// wrap.setAttribute("class", "wrap");
+// for (const item of rules) {
+//   let rules = document.createElement("div");
+//   rules.setAttribute("class", "rules rule" + number);
+//   //   rules.classList.add("rule" + number);
+//   //
+//   let h2 = document.createElement("h2");
+//   h2.innerText = item.title;
+//   //
+//   let p = document.createElement("p");
+//   p.innerText = item.body;
+//   //
+//   rules.append(h2, p);
+//   wrap.appendChild(rules);
+//   ++number;
+// }
+// document.body.appendChild(wrap);
