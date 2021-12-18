@@ -6,49 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .Task {
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .postsContainer,.commentsContainer{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .post {
+        flex-basis: 20%;
         padding: 20px;
-      }
-      .menuText {
-        text-align: center;
-        background-color: aqua;
-        padding: 5px;
-      }
-      .hide {
-        display: none;
-      }
-      #comments > div{
-        width: 300px;
-
+        min-width: 200px;
+        min-height: 300px;
+        box-sizing: border-box;
+        border: 2px solid rgba(17, 99, 124, 0.315);
       }
     </style>
   </head>
   <body>
-    <div class="Task">
-      <div id="text"></div>
-      <button onclick="deleteText()">Delete text</button>
-    </div>
-    <div class="Task">
-      <button id="btn" onclick="selfDestroy()">Self destroy</button>
-    </div>
-    <div class="Task">
-      <input id="inputAge" type="text" placeholder="input your age" />
-      <button onclick="checkAge()">Submit</button>
-      <div id="message"></div>
-    </div>
-    <div class="Task">
-      <div class="menu">
-        <button onclick="toggleMenu()" class="menuText">MenuToggle</button>
-        <ul class="menuList">
-          <li>Item1</li>
-          <li>Item2</li>
-          <li>Item3</li>
-          <li>Item4</li>
-          <li>Item5</li>
-        </ul>
-      </div>
-    </div>
-    <div id="comments"></div>
     <script src="../JS/hw.js"></script>
   </body>
 </html>
