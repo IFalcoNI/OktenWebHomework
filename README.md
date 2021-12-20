@@ -1,4 +1,10 @@
 # OktenWebHomeworkTable
+### Database
+|   № / Name | Check mark  |
+| :----------: | :----------:  |
+|   [L1_DB](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L1_JS)  |          |
+|   [L2_DB](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L2_JS)  |          |
+|   [L3_DB](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L3_JS)  |           |
 ### JavaScript
 |   № / Name | Check mark  |
 | :----------: | :----------:  |
@@ -14,10 +20,7 @@
 |   [L10_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L10_JS)  |     ✅      |
 |   [L11_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L11_JS)  |          |
 |   [L12_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L12_JS)  |          |
-|   [L13_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L13_JS)  |          |
-|   [L14_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L14_JS)  |          |
-|   [L15_JS](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L15_JS)  |          |
-|   [L16_JS(mini-project)](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L16_JS)  |          |
+|   [L13_JS(mini-project)](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L13_JS)  |          |
 
 
 ### HTML/CSS/Bootstrap
