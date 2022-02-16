@@ -1,6 +1,5 @@
 const path = require("path");
 const fs = require("fs");
-const Logger = require("nodemon/lib/utils/log");
 // Потім створити в вашому головному файлі (для прикладу app.js) два масиви з обєктами user ({. name: "Andrii", age: 22, city: "Lviv" }),  відповідно перший - onlineUsers, другий - inPersonUsers;
 const onlineUsers = [
   { name: "Andrii", age: 22, city: "Lviv" },
@@ -55,7 +54,7 @@ inPersonUsers.forEach((user) => {
   );
 });
 
-// // Коли ви це виконаєте напишіть функцію яка буде міняти місцями юзерів з одного файлу і папки в іншу. (ті, що були в папці inPerson будуть в папці online)
+//  Коли ви це виконаєте напишіть функцію яка буде міняти місцями юзерів з одного файлу і папки в іншу. (ті, що були в папці inPerson будуть в папці online)
 
 const swap = (firstFolder, secondFolder) => {
   fs.readdir(path.join(__dirname, "main", firstFolder), (err, data) => {
