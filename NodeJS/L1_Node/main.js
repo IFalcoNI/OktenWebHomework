@@ -75,18 +75,11 @@ setTimeout(() => {
             console.log(err);
             throw err;
           }
-          swapData = data.toString();
+          swapData = data;
+          console.log(swapData.toString());
         }
       );
-      fs.truncate(
-        path.join(__dirname, "main", "online", "onlineUsers.txt"),
-        (err) => {
-          if (err) {
-            console.log(err);
-          }
-        }
-      );
-      fs.appendFile(
+      fs.appendFileSync(
         path.join(__dirname, "main", "online", "onlineUsers.txt"),
         data.toString(),
         { flag: "w" },
@@ -97,25 +90,17 @@ setTimeout(() => {
           }
         }
       );
-      fs.truncate(
+      fs.appendFileSync(
         path.join(__dirname, "main", "inPerson", "inPersonUsers.txt"),
+        "new",
+        { flag: "w" },
         (err) => {
           if (err) {
             console.log(err);
+            throw err;
           }
         }
       );
-    }
-  );
-  fs.appendFile(
-    path.join(__dirname, "main", "inPerson", "inPersonUsers.txt"),
-    swapData,
-    { flag: "w" },
-    (err) => {
-      if (err) {
-        console.log(err);
-        throw err;
-      }
     }
   );
 }, 2000);
