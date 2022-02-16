@@ -1,4 +1,0 @@
-
-Name: Elon 
-Age:99 
-City:Zhmerynka
