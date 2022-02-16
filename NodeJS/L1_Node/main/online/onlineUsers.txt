@@ -1,8 +1,8 @@
 
-Name: Andrii 
+Name: Oleg 
 Age:22 
 City:Lviv
 
-Name: Elon 
-Age:99 
-City:Zhmerynka
+Name: Anya 
+Age:20 
+City:City
