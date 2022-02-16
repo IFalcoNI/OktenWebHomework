@@ -1,0 +1,8 @@
+
+Name: Oleg 
+Age:22 
+City:Lviv
+
+Name: Anya 
+Age:20 
+City:City

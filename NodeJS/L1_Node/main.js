@@ -68,34 +68,33 @@ inPersonUsers.forEach((user) => {
 });
 
 // Коли ви це виконаєте напишіть функцію яка буде міняти місцями юзерів з одного файлу і папки в іншу. (ті, що були в папці inPerson будуть в папці online)
-
-fs.readFile(
-  path.join(__dirname, "main", "inPerson", "inPersonUsers.txt"),
-  (err, data) => {
-    if (err) {
-      console.log(err);
-      throw err;
-    }
-    console.log(data.toString());
-    fs.truncate(
-      path.join(__dirname, "main", "online", "onlineUsers.txt"),
-      (err) => {
-          if(err){
-              console.log(err);
+setTimeout(() => {
+  fs.readFile(
+    path.join(__dirname, "main", "inPerson", "inPersonUsers.txt"),
+    (err, data) => {
+      if (err) {
+        console.log(err);
+        throw err;
+      }
+      fs.truncate(
+        path.join(__dirname, "main", "online", "onlineUsers.txt"),
+        (err) => {
+          if (err) {
+            console.log(err);
           }
-      }
-    );
-    fs.appendFile(
-      path.join(__dirname, "main", "online", "onlineUsers.txt"),
-      data.toString(),
-      { flag: "w" },
-      (err) => {
-        if (err) {
-          console.log(err);
-          throw err;
         }
-        console.log(data.toString());
-      }
-    );
-  }
-);
+      );
+      fs.appendFile(
+        path.join(__dirname, "main", "online", "onlineUsers.txt"),
+        data.toString(),
+        { flag: "w" },
+        (err) => {
+          if (err) {
+            console.log(err);
+            throw err;
+          }
+        }
+      );
+    }
+  );
+}, 5000);
