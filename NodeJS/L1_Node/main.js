@@ -60,6 +60,7 @@ inPersonUsers.forEach((user) => {
 
 // Коли ви це виконаєте напишіть функцію яка буде міняти місцями юзерів з одного файлу і папки в іншу. (ті, що були в папці inPerson будуть в папці online)
 setTimeout(() => {
+  let swapData;
   fs.readFile(
     path.join(__dirname, "main", "inPerson", "inPersonUsers.txt"),
     (err, data) => {
@@ -67,6 +68,16 @@ setTimeout(() => {
         console.log(err);
         throw err;
       }
+      fs.readFile(
+        path.join(__dirname, "main", "online", "onlineUsers.txt"),
+        (err, data) => {
+          if (err) {
+            console.log(err);
+            throw err;
+          }
+          swapData = data.toString();
+        }
+      );
       fs.truncate(
         path.join(__dirname, "main", "online", "onlineUsers.txt"),
         (err) => {
@@ -86,6 +97,25 @@ setTimeout(() => {
           }
         }
       );
+      fs.truncate(
+        path.join(__dirname, "main", "inPerson", "inPersonUsers.txt"),
+        (err) => {
+          if (err) {
+            console.log(err);
+          }
+        }
+      );
     }
   );
-}, 5000);
+  fs.appendFile(
+    path.join(__dirname, "main", "inPerson", "inPersonUsers.txt"),
+    swapData,
+    { flag: "w" },
+    (err) => {
+      if (err) {
+        console.log(err);
+        throw err;
+      }
+    }
+  );
+}, 2000);
