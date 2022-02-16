@@ -1,10 +1,5 @@
 # OktenWebHomeworkTable
-### Database
-|   № / Name | Check mark  |
-| :----------: | :----------:  |
-|   [L1_DB](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L1_JS)  |          |
-|   [L2_DB](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L2_JS)  |          |
-|   [L3_DB](https://github.com/IFalcoNI/OktenWebHomework/tree/main/JavaScript/L3_JS)  |           |
+
 ### JavaScript
 |   № / Name | Check mark  |
 | :----------: | :----------:  |
