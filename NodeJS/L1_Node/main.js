@@ -1,19 +1,39 @@
 const path = require("path");
 const fs = require("fs");
 // Потім створити в вашому головному файлі (для прикладу app.js) два масиви з обєктами user ({. name: "Andrii", age: 22, city: "Lviv" }),  відповідно перший - onlineUsers, другий - inPersonUsers;
-const onlineUsers = [
-  { name: "Andrii", age: 22, city: "Lviv" },
-  { name: "Elon", age: 99, city: "Zhmerynka" },
+const onlineUsers = [{
+    name: "Andrii",
+    age: 22,
+    city: "Lviv"
+  },
+  {
+    name: "Elon",
+    age: 99,
+    city: "Zhmerynka"
+  },
 ];
-const inPersonUsers = [
-  { name: "Oleg", age: 22, city: "Lviv" },
-  { name: "Anya", age: 20, city: "City" },
+const inPersonUsers = [{
+    name: "Oleg",
+    age: 22,
+    city: "Lviv"
+  },
+  {
+    name: "Anya",
+    age: 20,
+    city: "City"
+  },
+  {
+    name: "Anya",
+    age: 20,
+    city: "City"
+  }
 ];
 
 // Створити основну папку (main), в яку покласти дві інші папки: перша - online, друга - inPerson
 fs.mkdirSync(
-  path.join(__dirname, "main", "online"),
-  { recursive: true },
+  path.join(__dirname, "main", "online"), {
+    recursive: true
+  },
   (err) => {
     if (err) {
       console.log(err);
@@ -21,8 +41,9 @@ fs.mkdirSync(
   }
 );
 fs.mkdirSync(
-  path.join(__dirname, "main", "inPerson"),
-  { recursive: true },
+  path.join(__dirname, "main", "inPerson"), {
+    recursive: true
+  },
   (err) => {
     if (err) {
       console.log(err);
